@@ -20,7 +20,6 @@
 		18CCA2292090627A00300966 /* NSMutableString+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA2202090627A00300966 /* NSMutableString+Safe.m */; };
 		18CCA22A2090627A00300966 /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA2232090627A00300966 /* NSMutableDictionary+Safe.m */; };
 		18CCA22B2090627A00300966 /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA2242090627A00300966 /* NSMutableArray+Safe.m */; };
-		18E3516C2090695A0067C967 /* JZLocationConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3516A2090695A0067C967 /* JZLocationConverter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,8 +48,6 @@
 		18CCA2222090627A00300966 /* NSDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Safe.h"; sourceTree = "<group>"; };
 		18CCA2232090627A00300966 /* NSMutableDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Safe.m"; sourceTree = "<group>"; };
 		18CCA2242090627A00300966 /* NSMutableArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Safe.m"; sourceTree = "<group>"; };
-		18E3516A2090695A0067C967 /* JZLocationConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZLocationConverter.m; sourceTree = "<group>"; };
-		18E3516B2090695A0067C967 /* JZLocationConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZLocationConverter.h; sourceTree = "<group>"; };
 		18E3516D209069920067C967 /* YFCommonTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFCommonTools.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				18E3516D209069920067C967 /* YFCommonTools.h */,
-				18E351692090695A0067C967 /* Map */,
 				18CCA1FF20905EF400300966 /* SafeObject */,
 			);
 			name = YFCommonTools;
@@ -129,15 +125,6 @@
 				18CCA2192090627A00300966 /* SafeObject.h */,
 			);
 			path = SafeObject;
-			sourceTree = "<group>";
-		};
-		18E351692090695A0067C967 /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				18E3516A2090695A0067C967 /* JZLocationConverter.m */,
-				18E3516B2090695A0067C967 /* JZLocationConverter.h */,
-			);
-			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,7 +204,6 @@
 				18CCA1F820905EA800300966 /* main.m in Sources */,
 				18CCA2262090627A00300966 /* NSObject+Swizzling.m in Sources */,
 				18CCA2292090627A00300966 /* NSMutableString+Safe.m in Sources */,
-				18E3516C2090695A0067C967 /* JZLocationConverter.m in Sources */,
 				18CCA1EA20905EA700300966 /* AppDelegate.m in Sources */,
 				18CCA22B2090627A00300966 /* NSMutableArray+Safe.m in Sources */,
 				18CCA2272090627A00300966 /* NSDictionary+Safe.m in Sources */,
