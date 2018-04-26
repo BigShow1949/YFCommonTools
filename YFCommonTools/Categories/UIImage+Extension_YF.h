@@ -10,7 +10,7 @@
 
 @interface UIImage (Extension_YF)
 
-// 模糊图片
+// 模糊图片  毛玻璃效果
 
 #pragma mark - 图片基本处理
 // 返回一张已经经过拉伸处理的图片
