@@ -247,7 +247,6 @@ static inline NSString* StringIsEmpty (NSString *string){
     
     const char *value = [self UTF8String];
     // extern unsigned char *CC_MD5(const void *data, CC_LONG len, unsigned char *md)
-
     unsigned char outputBuffer[CC_MD5_DIGEST_LENGTH];
     CC_MD5(value, (unsigned int)strlen(value), outputBuffer);
     
@@ -294,7 +293,6 @@ static inline NSString* StringIsEmpty (NSString *string){
     NSMutableString *strMutable = [NSMutableString stringWithString:str];
     [strMutable replaceCharactersInRange:NSMakeRange(3, 4) withString:@"****"];
     return strMutable;
-    
 }
 
 #pragma mark - 缓存路径
