@@ -10,7 +10,7 @@
 #define YFCommonTools_h
 
 #import "SafeObject.h"
-#import "JZLocationConverter.h"
+#import "YFLocationConverter.h"
 
 // 分类工具
 #import "NSString+Extension_YF.h"

@@ -13,7 +13,7 @@
 		18CCA1F220905EA800300966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CCA1F120905EA800300966 /* Assets.xcassets */; };
 		18CCA1F520905EA800300966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CCA1F320905EA800300966 /* LaunchScreen.storyboard */; };
 		18CCA1F820905EA800300966 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA1F720905EA800300966 /* main.m */; };
-		18E351C920907B6C0067C967 /* JZLocationConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351A920907B6C0067C967 /* JZLocationConverter.m */; };
+		18E351C920907B6C0067C967 /* YFLocationConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351A920907B6C0067C967 /* YFLocationConverter.m */; };
 		18E351EF20907BE70067C967 /* UIButton+titlePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351DE20907BE60067C967 /* UIButton+titlePosition.m */; };
 		18E351F120907BE70067C967 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351E520907BE60067C967 /* UIImage+Image.m */; };
 		18E351F220907BE70067C967 /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351E620907BE60067C967 /* UIImage+Rotate.m */; };
@@ -43,8 +43,8 @@
 		18CCA1F620905EA800300966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18CCA1F720905EA800300966 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18E3519720907B6C0067C967 /* YFCommonTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCommonTools.h; sourceTree = "<group>"; };
-		18E351A920907B6C0067C967 /* JZLocationConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZLocationConverter.m; sourceTree = "<group>"; };
-		18E351AA20907B6C0067C967 /* JZLocationConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZLocationConverter.h; sourceTree = "<group>"; };
+		18E351A920907B6C0067C967 /* YFLocationConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLocationConverter.m; sourceTree = "<group>"; };
+		18E351AA20907B6C0067C967 /* YFLocationConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLocationConverter.h; sourceTree = "<group>"; };
 		18E351D720907BE50067C967 /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
 		18E351DE20907BE60067C967 /* UIButton+titlePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+titlePosition.m"; sourceTree = "<group>"; };
 		18E351DF20907BE60067C967 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
@@ -159,8 +159,8 @@
 		18E351A820907B6C0067C967 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				18E351AA20907B6C0067C967 /* JZLocationConverter.h */,
-				18E351A920907B6C0067C967 /* JZLocationConverter.m */,
+				18E351AA20907B6C0067C967 /* YFLocationConverter.h */,
+				18E351A920907B6C0067C967 /* YFLocationConverter.m */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -274,7 +274,7 @@
 				18E351F220907BE70067C967 /* UIImage+Rotate.m in Sources */,
 				18CCA1EA20905EA700300966 /* AppDelegate.m in Sources */,
 				18E35211209080FE0067C967 /* UIButton+Extension_YF.m in Sources */,
-				18E351C920907B6C0067C967 /* JZLocationConverter.m in Sources */,
+				18E351C920907B6C0067C967 /* YFLocationConverter.m in Sources */,
 				18E3520620907BFD0067C967 /* NSObject+Swizzling.m in Sources */,
 				18E351EF20907BE70067C967 /* UIButton+titlePosition.m in Sources */,
 			);
