@@ -13,6 +13,9 @@
 // 模糊图片  毛玻璃效果
 
 #pragma mark - 图片基本处理
+// 旋转图片
+- (UIImage*)imageRotatedByDegrees:(CGFloat)degrees;
+
 // 返回一张已经经过拉伸处理的图片
 + (UIImage *)stretchImageWithName:(NSString *)name;
 

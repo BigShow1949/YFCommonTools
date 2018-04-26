@@ -11,6 +11,7 @@
 
 #import "SafeObject.h"
 #import "YFLocationConverter.h"
+#import "YFGloublTool.h"
 
 // 分类工具
 #import "NSString+Extension_YF.h"

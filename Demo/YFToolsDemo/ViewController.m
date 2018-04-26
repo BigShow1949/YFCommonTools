@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "SafeObject.h"
+#import "YFCommonTools.h"
 
 @interface ViewController ()
 
@@ -19,6 +19,24 @@
     [super viewDidLoad];
     
     [self testSafeObject];
+    
+    [self testGloublTool];
+}
+
+- (void)testGloublTool {
+    
+    if (IS_iOS11Later) {
+        NSLog(@"====================  ios11以后");
+    }else if (IS_iOS10Later){
+        NSLog(@"====================  ios10以后");
+    }else if (IS_iOS9Later){
+        NSLog(@"====================  ios9以后");
+    }else if (IS_iOS8Later){
+        NSLog(@"====================  ios8以后");
+    }
+    
+    TARGET_IPHONE_SIMULATOR
+    
 }
 
 - (void)testSafeObject {

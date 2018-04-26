@@ -14,7 +14,6 @@
 		18CCA1F520905EA800300966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CCA1F320905EA800300966 /* LaunchScreen.storyboard */; };
 		18CCA1F820905EA800300966 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA1F720905EA800300966 /* main.m */; };
 		18E351C920907B6C0067C967 /* YFLocationConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351A920907B6C0067C967 /* YFLocationConverter.m */; };
-		18E351F220907BE70067C967 /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351E620907BE60067C967 /* UIImage+Rotate.m */; };
 		18E3520520907BFD0067C967 /* NSObject+ImpChangeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351F720907BFC0067C967 /* NSObject+ImpChangeTool.m */; };
 		18E3520620907BFD0067C967 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351F820907BFC0067C967 /* NSObject+Swizzling.m */; };
 		18E3520720907BFD0067C967 /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351FA20907BFC0067C967 /* NSDictionary+Safe.m */; };
@@ -26,6 +25,7 @@
 		18E35211209080FE0067C967 /* UIButton+Extension_YF.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E35210209080FE0067C967 /* UIButton+Extension_YF.m */; };
 		18E35214209081130067C967 /* UIImage+Extension_YF.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E35213209081130067C967 /* UIImage+Extension_YF.m */; };
 		18E35217209081320067C967 /* UIColor+Extension_YF.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E35216209081320067C967 /* UIColor+Extension_YF.m */; };
+		18E3524720919EEF0067C967 /* YFGloublTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3524620919EEF0067C967 /* YFGloublTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +42,6 @@
 		18E3519720907B6C0067C967 /* YFCommonTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCommonTools.h; sourceTree = "<group>"; };
 		18E351A920907B6C0067C967 /* YFLocationConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLocationConverter.m; sourceTree = "<group>"; };
 		18E351AA20907B6C0067C967 /* YFLocationConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLocationConverter.h; sourceTree = "<group>"; };
-		18E351D720907BE50067C967 /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
-		18E351E620907BE60067C967 /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
 		18E351F620907BFC0067C967 /* NSMutableDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Safe.h"; sourceTree = "<group>"; };
 		18E351F720907BFC0067C967 /* NSObject+ImpChangeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ImpChangeTool.m"; sourceTree = "<group>"; };
 		18E351F820907BFC0067C967 /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
@@ -67,6 +65,8 @@
 		18E35213209081130067C967 /* UIImage+Extension_YF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension_YF.m"; sourceTree = "<group>"; };
 		18E35215209081320067C967 /* UIColor+Extension_YF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension_YF.h"; sourceTree = "<group>"; };
 		18E35216209081320067C967 /* UIColor+Extension_YF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension_YF.m"; sourceTree = "<group>"; };
+		18E3524520919EEF0067C967 /* YFGloublTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFGloublTool.h; sourceTree = "<group>"; };
+		18E3524620919EEF0067C967 /* YFGloublTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFGloublTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				18E3519720907B6C0067C967 /* YFCommonTools.h */,
+				18E3524520919EEF0067C967 /* YFGloublTool.h */,
+				18E3524620919EEF0067C967 /* YFGloublTool.m */,
 				18E3519820907B6C0067C967 /* SafeObject */,
 				18E351A820907B6C0067C967 /* Map */,
 				18E351AB20907B6C0067C967 /* Categories */,
@@ -159,8 +161,6 @@
 		18E351AB20907B6C0067C967 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				18E351D720907BE50067C967 /* UIImage+Rotate.h */,
-				18E351E620907BE60067C967 /* UIImage+Rotate.m */,
 				18E3520C20907EF40067C967 /* NSString+Extension_YF.h */,
 				18E3520D20907EF40067C967 /* NSString+Extension_YF.m */,
 				18E3520F209080FE0067C967 /* UIButton+Extension_YF.h */,
@@ -254,7 +254,7 @@
 				18E3520720907BFD0067C967 /* NSDictionary+Safe.m in Sources */,
 				18CCA1ED20905EA700300966 /* ViewController.m in Sources */,
 				18CCA1F820905EA800300966 /* main.m in Sources */,
-				18E351F220907BE70067C967 /* UIImage+Rotate.m in Sources */,
+				18E3524720919EEF0067C967 /* YFGloublTool.m in Sources */,
 				18CCA1EA20905EA700300966 /* AppDelegate.m in Sources */,
 				18E35211209080FE0067C967 /* UIButton+Extension_YF.m in Sources */,
 				18E351C920907B6C0067C967 /* YFLocationConverter.m in Sources */,
