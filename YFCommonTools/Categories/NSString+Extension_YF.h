@@ -10,6 +10,109 @@
 
 @interface NSString (Extension_YF)
 
+// 文件路径拼接 数据存储
+
+//
+
+#pragma mark - emoji表情
+/**
+ *  判断是否包含emoji表情
+ *
+ *  @param string 需要判断的字符串
+ *
+ *  @return 返回yes or no
+ */
+
++ (BOOL)stringContainsEmoji:(NSString *)string;
+
+/**
+ *  判断是否为空，全部是空格或者回车，或者两者都有
+ *
+ *  @param string 需要判断的字符串
+ *
+ *  @return 返回 yes or no
+ */
++ (BOOL)isNilForText:(NSString *)string;
+
+#pragma mark - 空字符串判断
++ (NSString *)stringWithoutNilFormart:(NSString *)str;
+
+#pragma mark - 时间转换
+/**
+ *  将 2016-06-22 14:11:57 格式转换为 2016年06月22日 14:11:57
+ */
+- (NSString *)changeToYearSec;
+
+/**
+ *  将 2016-06-22 14:11:57 格式转换为 2016年06月22日 14:11
+ */
+- (NSString *)changeToYearMin;
+
+/**
+ *  将 2016-06-22 14:11:57 格式转换为 2016年06月22日
+ */
+- (NSString *)changeToYearDay;
+
+
+/**
+ *  将 2016-06-22 14:11:57 格式转换为 2016年06月
+ */
+- (NSString *)changeToYearMonth;
+
+/**
+ *  获取 2016-06-22 14:11:57 的月份 (至少要有月2016-06)
+ */
+- (NSString *)getMonthStr;
+
+/**
+ *  获取 2016-06-22 14:11:57 的年 (至少要有年2016)
+ */
+- (NSString *)getYearStr;
+
+/**
+ *  将 2016-06-22 14:11:57 格式转换为 06月07日
+ */
+- (NSString *)changeToMonthDay;
+
+/**
+ *  获取 2016-06-22 14:11:57 的天 (至少要有天2016-06-22)
+ */
+- (NSString *)getDayStr;
+
+#pragma mark - 正则表达式判断
+//验证手机号码
+- (BOOL)validateMobilePhone;
+
+//验证固定电话号码
+- (BOOL)validateTelePhone;
+
+//非负整数
+- (BOOL)validateUnsignedInt;
+
+//普通字符串，字母数字汉字和空格
+- (BOOL)validateNormalString;
+
+//普通字符串，字母数字 密码
+- (BOOL)validatePassowrdString;
+
+//空格或汉字字符串
+- (BOOL)validateChineseString;
+
+//邮箱
+- (BOOL)validateEMail;
+
+// MD5转成字符串
+- (NSString *)stringFromMD5;
+
+//MD5大写字母串
+- (NSString *)md5UppercaseStringUsingEncoding:(NSStringEncoding)encoding;
+
+//MD5小写字母串
+- (NSString *)md5LowercaseStringUsingEncoding:(NSStringEncoding)encoding;
+
+//截取电话中四位****
++ (NSString *)cutoffStr:(NSString *)str;
+
 #pragma mark - 缓存路径
 /**
  *  返回缓存路径的完整路径名

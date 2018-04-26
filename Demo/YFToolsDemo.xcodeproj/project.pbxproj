@@ -14,16 +14,9 @@
 		18CCA1F520905EA800300966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CCA1F320905EA800300966 /* LaunchScreen.storyboard */; };
 		18CCA1F820905EA800300966 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA1F720905EA800300966 /* main.m */; };
 		18E351C920907B6C0067C967 /* JZLocationConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351A920907B6C0067C967 /* JZLocationConverter.m */; };
-		18E351EB20907BE70067C967 /* NSString+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351D620907BE50067C967 /* NSString+Tool.m */; };
-		18E351EC20907BE70067C967 /* NSString+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351DA20907BE50067C967 /* NSString+Time.m */; };
-		18E351ED20907BE70067C967 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351DC20907BE60067C967 /* UIColor+Extension.m */; };
-		18E351EE20907BE70067C967 /* NSString+Null.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351DD20907BE60067C967 /* NSString+Null.m */; };
 		18E351EF20907BE70067C967 /* UIButton+titlePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351DE20907BE60067C967 /* UIButton+titlePosition.m */; };
-		18E351F020907BE70067C967 /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351E020907BE60067C967 /* NSString+File.m */; };
 		18E351F120907BE70067C967 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351E520907BE60067C967 /* UIImage+Image.m */; };
 		18E351F220907BE70067C967 /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351E620907BE60067C967 /* UIImage+Rotate.m */; };
-		18E351F320907BE70067C967 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351E720907BE60067C967 /* NSString+MD5Addition.m */; };
-		18E351F420907BE70067C967 /* NSString+LXBStringContainEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351E920907BE70067C967 /* NSString+LXBStringContainEmoji.m */; };
 		18E351F520907BE70067C967 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351EA20907BE70067C967 /* UIImage+ImageEffects.m */; };
 		18E3520520907BFD0067C967 /* NSObject+ImpChangeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351F720907BFC0067C967 /* NSObject+ImpChangeTool.m */; };
 		18E3520620907BFD0067C967 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351F820907BFC0067C967 /* NSObject+Swizzling.m */; };
@@ -52,27 +45,13 @@
 		18E3519720907B6C0067C967 /* YFCommonTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCommonTools.h; sourceTree = "<group>"; };
 		18E351A920907B6C0067C967 /* JZLocationConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZLocationConverter.m; sourceTree = "<group>"; };
 		18E351AA20907B6C0067C967 /* JZLocationConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZLocationConverter.h; sourceTree = "<group>"; };
-		18E351D520907BE50067C967 /* NSString+Null.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Null.h"; sourceTree = "<group>"; };
-		18E351D620907BE50067C967 /* NSString+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tool.m"; sourceTree = "<group>"; };
 		18E351D720907BE50067C967 /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
-		18E351D820907BE50067C967 /* NSString+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Tool.h"; sourceTree = "<group>"; };
-		18E351D920907BE50067C967 /* NSString+File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+File.h"; sourceTree = "<group>"; };
-		18E351DA20907BE50067C967 /* NSString+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Time.m"; sourceTree = "<group>"; };
-		18E351DB20907BE60067C967 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
-		18E351DC20907BE60067C967 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
-		18E351DD20907BE60067C967 /* NSString+Null.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Null.m"; sourceTree = "<group>"; };
 		18E351DE20907BE60067C967 /* UIButton+titlePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+titlePosition.m"; sourceTree = "<group>"; };
 		18E351DF20907BE60067C967 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		18E351E020907BE60067C967 /* NSString+File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+File.m"; sourceTree = "<group>"; };
-		18E351E120907BE60067C967 /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
-		18E351E220907BE60067C967 /* NSString+LXBStringContainEmoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LXBStringContainEmoji.h"; sourceTree = "<group>"; };
-		18E351E320907BE60067C967 /* NSString+Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Time.h"; sourceTree = "<group>"; };
 		18E351E420907BE60067C967 /* UIButton+titlePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+titlePosition.h"; sourceTree = "<group>"; };
 		18E351E520907BE60067C967 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		18E351E620907BE60067C967 /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
-		18E351E720907BE60067C967 /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
 		18E351E820907BE60067C967 /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
-		18E351E920907BE70067C967 /* NSString+LXBStringContainEmoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LXBStringContainEmoji.m"; sourceTree = "<group>"; };
 		18E351EA20907BE70067C967 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		18E351F620907BFC0067C967 /* NSMutableDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Safe.h"; sourceTree = "<group>"; };
 		18E351F720907BFC0067C967 /* NSObject+ImpChangeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ImpChangeTool.m"; sourceTree = "<group>"; };
@@ -189,22 +168,8 @@
 		18E351AB20907B6C0067C967 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				18E351D920907BE50067C967 /* NSString+File.h */,
-				18E351E020907BE60067C967 /* NSString+File.m */,
-				18E351E220907BE60067C967 /* NSString+LXBStringContainEmoji.h */,
-				18E351E920907BE70067C967 /* NSString+LXBStringContainEmoji.m */,
-				18E351E120907BE60067C967 /* NSString+MD5Addition.h */,
-				18E351E720907BE60067C967 /* NSString+MD5Addition.m */,
-				18E351D520907BE50067C967 /* NSString+Null.h */,
-				18E351DD20907BE60067C967 /* NSString+Null.m */,
-				18E351E320907BE60067C967 /* NSString+Time.h */,
-				18E351DA20907BE50067C967 /* NSString+Time.m */,
-				18E351D820907BE50067C967 /* NSString+Tool.h */,
-				18E351D620907BE50067C967 /* NSString+Tool.m */,
 				18E351E420907BE60067C967 /* UIButton+titlePosition.h */,
 				18E351DE20907BE60067C967 /* UIButton+titlePosition.m */,
-				18E351DB20907BE60067C967 /* UIColor+Extension.h */,
-				18E351DC20907BE60067C967 /* UIColor+Extension.m */,
 				18E351E820907BE60067C967 /* UIImage+Image.h */,
 				18E351E520907BE60067C967 /* UIImage+Image.m */,
 				18E351DF20907BE60067C967 /* UIImage+ImageEffects.h */,
@@ -295,29 +260,22 @@
 			files = (
 				18E3520520907BFD0067C967 /* NSObject+ImpChangeTool.m in Sources */,
 				18E3520920907BFD0067C967 /* NSMutableString+Safe.m in Sources */,
-				18E351F020907BE70067C967 /* NSString+File.m in Sources */,
 				18E35214209081130067C967 /* UIImage+Extension_YF.m in Sources */,
 				18E3520A20907BFD0067C967 /* NSMutableDictionary+Safe.m in Sources */,
 				18E3520E20907EF40067C967 /* NSString+Extension_YF.m in Sources */,
 				18E3520820907BFD0067C967 /* NSArray+Safe.m in Sources */,
-				18E351F420907BE70067C967 /* NSString+LXBStringContainEmoji.m in Sources */,
 				18E35217209081320067C967 /* UIColor+Extension_YF.m in Sources */,
 				18E3520B20907BFD0067C967 /* NSMutableArray+Safe.m in Sources */,
-				18E351EE20907BE70067C967 /* NSString+Null.m in Sources */,
 				18E351F520907BE70067C967 /* UIImage+ImageEffects.m in Sources */,
 				18E3520720907BFD0067C967 /* NSDictionary+Safe.m in Sources */,
 				18E351F120907BE70067C967 /* UIImage+Image.m in Sources */,
 				18CCA1ED20905EA700300966 /* ViewController.m in Sources */,
-				18E351F320907BE70067C967 /* NSString+MD5Addition.m in Sources */,
-				18E351ED20907BE70067C967 /* UIColor+Extension.m in Sources */,
 				18CCA1F820905EA800300966 /* main.m in Sources */,
 				18E351F220907BE70067C967 /* UIImage+Rotate.m in Sources */,
 				18CCA1EA20905EA700300966 /* AppDelegate.m in Sources */,
 				18E35211209080FE0067C967 /* UIButton+Extension_YF.m in Sources */,
-				18E351EB20907BE70067C967 /* NSString+Tool.m in Sources */,
 				18E351C920907B6C0067C967 /* JZLocationConverter.m in Sources */,
 				18E3520620907BFD0067C967 /* NSObject+Swizzling.m in Sources */,
-				18E351EC20907BE70067C967 /* NSString+Time.m in Sources */,
 				18E351EF20907BE70067C967 /* UIButton+titlePosition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
