@@ -14,8 +14,6 @@
 		18CCA1F520905EA800300966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CCA1F320905EA800300966 /* LaunchScreen.storyboard */; };
 		18CCA1F820905EA800300966 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA1F720905EA800300966 /* main.m */; };
 		18E351C920907B6C0067C967 /* YFLocationConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351A920907B6C0067C967 /* YFLocationConverter.m */; };
-		18E351EF20907BE70067C967 /* UIButton+titlePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351DE20907BE60067C967 /* UIButton+titlePosition.m */; };
-		18E351F120907BE70067C967 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351E520907BE60067C967 /* UIImage+Image.m */; };
 		18E351F220907BE70067C967 /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351E620907BE60067C967 /* UIImage+Rotate.m */; };
 		18E351F520907BE70067C967 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351EA20907BE70067C967 /* UIImage+ImageEffects.m */; };
 		18E3520520907BFD0067C967 /* NSObject+ImpChangeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E351F720907BFC0067C967 /* NSObject+ImpChangeTool.m */; };
@@ -46,12 +44,8 @@
 		18E351A920907B6C0067C967 /* YFLocationConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLocationConverter.m; sourceTree = "<group>"; };
 		18E351AA20907B6C0067C967 /* YFLocationConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLocationConverter.h; sourceTree = "<group>"; };
 		18E351D720907BE50067C967 /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
-		18E351DE20907BE60067C967 /* UIButton+titlePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+titlePosition.m"; sourceTree = "<group>"; };
 		18E351DF20907BE60067C967 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		18E351E420907BE60067C967 /* UIButton+titlePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+titlePosition.h"; sourceTree = "<group>"; };
-		18E351E520907BE60067C967 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		18E351E620907BE60067C967 /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
-		18E351E820907BE60067C967 /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
 		18E351EA20907BE70067C967 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		18E351F620907BFC0067C967 /* NSMutableDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Safe.h"; sourceTree = "<group>"; };
 		18E351F720907BFC0067C967 /* NSObject+ImpChangeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ImpChangeTool.m"; sourceTree = "<group>"; };
@@ -168,10 +162,6 @@
 		18E351AB20907B6C0067C967 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				18E351E420907BE60067C967 /* UIButton+titlePosition.h */,
-				18E351DE20907BE60067C967 /* UIButton+titlePosition.m */,
-				18E351E820907BE60067C967 /* UIImage+Image.h */,
-				18E351E520907BE60067C967 /* UIImage+Image.m */,
 				18E351DF20907BE60067C967 /* UIImage+ImageEffects.h */,
 				18E351EA20907BE70067C967 /* UIImage+ImageEffects.m */,
 				18E351D720907BE50067C967 /* UIImage+Rotate.h */,
@@ -268,7 +258,6 @@
 				18E3520B20907BFD0067C967 /* NSMutableArray+Safe.m in Sources */,
 				18E351F520907BE70067C967 /* UIImage+ImageEffects.m in Sources */,
 				18E3520720907BFD0067C967 /* NSDictionary+Safe.m in Sources */,
-				18E351F120907BE70067C967 /* UIImage+Image.m in Sources */,
 				18CCA1ED20905EA700300966 /* ViewController.m in Sources */,
 				18CCA1F820905EA800300966 /* main.m in Sources */,
 				18E351F220907BE70067C967 /* UIImage+Rotate.m in Sources */,
@@ -276,7 +265,6 @@
 				18E35211209080FE0067C967 /* UIButton+Extension_YF.m in Sources */,
 				18E351C920907B6C0067C967 /* YFLocationConverter.m in Sources */,
 				18E3520620907BFD0067C967 /* NSObject+Swizzling.m in Sources */,
-				18E351EF20907BE70067C967 /* UIButton+titlePosition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
