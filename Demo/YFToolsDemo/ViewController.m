@@ -35,8 +35,6 @@
         NSLog(@"====================  ios8以后");
     }
     
-    TARGET_IPHONE_SIMULATOR
-    
 }
 
 - (void)testSafeObject {
