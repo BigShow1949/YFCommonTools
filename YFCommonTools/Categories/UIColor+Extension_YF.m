@@ -31,6 +31,18 @@
     return [self colorWithRGBRed:red green:green blue:blue alpha:1];
 }
 
++ (UIColor *)randomColor {
+    return [UIColor colorWithRed:randomColorFloat()
+                           green:randomColorFloat()
+                            blue:randomColorFloat()
+                           alpha:1.0];
+}
+
+static inline CGFloat randomColorFloat()
+{
+    return (CGFloat)arc4random()/RAND_MAX;
+}
+
 #pragma mark - 颜色/字符串 转换
 + (NSString *)colorToHexStringWithColor:(UIColor *)color
 {

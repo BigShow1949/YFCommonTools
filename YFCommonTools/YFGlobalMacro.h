@@ -1,5 +1,5 @@
 //
-//  YFGloublTool.h
+//  YFGlobalMacro.h
 //  YFToolsDemo
 //
 //  Created by apple on 2018/4/26.
@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface YFGloublTool : NSObject
+/******************************  全局宏  *********************************/
+
+
+@interface YFGlobalMacro : NSObject
 
 #pragma mark - 系统版本
 //获取当前系统版本
@@ -23,7 +26,6 @@
 #define IS_IOS9 (IOS_VERSION == 9.0)
 #define IS_IOS10 (IOS_VERSION == 10.0)
 #define IS_IOS11 (IOS_VERSION == 11.0)
-
 
 
 #pragma mark - 设备型号

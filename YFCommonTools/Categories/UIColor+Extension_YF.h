@@ -40,6 +40,12 @@
 + (UIColor *)colorWithRGBRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha;
 + (UIColor *)colorWithRGBRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue;
 
+/**
+ *  生成随机颜色
+ *
+ */
++ (UIColor *)randomColor;
+
 #pragma mark - 颜色/字符串 转换
 /**
  *  将颜色转成 16进制

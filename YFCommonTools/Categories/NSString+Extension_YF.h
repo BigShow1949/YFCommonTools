@@ -35,9 +35,24 @@
 + (BOOL)isNilForText:(NSString *)string;
 
 #pragma mark - 空字符串判断
+/**
+ *  如果字符串为空则返回 "", <null> (null) 0 都算空字符
+ *
+ *  @param str 需要判断的字符串
+ *
+ */
 + (NSString *)stringWithoutNilFormart:(NSString *)str;
 
-#pragma mark - 时间转换
+#pragma mark - 时间转换  (时间差)  获取的时间距离现在多少
+//22.时间戳转换字符串(获取的时间距离现在多少)
++ (NSString *)timeSinceNow: (NSString *) theDate;
+
+//36.时间戳转换成指定格式
++ (NSString *)timeChange:(NSString *)time withFormatter:(NSString *)matter;
+
+//39.时间差
++ (NSString *)dateTimeDifferenceWithEndtime:(NSString *)endtime;
+
 /**
  *  将 2016-06-22 14:11:57 格式转换为 2016年06月22日 14:11:57
  */
@@ -80,36 +95,34 @@
 - (NSString *)getDayStr;
 
 #pragma mark - 正则表达式判断
+//验证纯字母
+- (BOOL)validateAllLetter;
+//验证纯数字
+- (BOOL)validateAllNumber;
+//验证银行卡
+- (BOOL)validateBandCard;
+//验证身份证
+- (BOOL)validateIDCard;
 //验证手机号码
 - (BOOL)validateMobilePhone;
-
 //验证固定电话号码
 - (BOOL)validateTelePhone;
-
 //非负整数
 - (BOOL)validateUnsignedInt;
-
 //普通字符串，字母数字汉字和空格
 - (BOOL)validateNormalString;
-
 //普通字符串，字母数字 密码
 - (BOOL)validatePassowrdString;
-
 //空格或汉字字符串
 - (BOOL)validateChineseString;
-
 //邮箱
 - (BOOL)validateEMail;
-
 // MD5转成字符串
 - (NSString *)stringFromMD5;
-
 //MD5大写字母串
 - (NSString *)md5UppercaseStringUsingEncoding:(NSStringEncoding)encoding;
-
 //MD5小写字母串
 - (NSString *)md5LowercaseStringUsingEncoding:(NSStringEncoding)encoding;
-
 //截取电话中四位****
 + (NSString *)cutoffStr:(NSString *)str;
 

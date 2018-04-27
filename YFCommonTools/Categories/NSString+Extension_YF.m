@@ -70,34 +70,104 @@
 }
 
 #pragma mark - 空字符串判断
-//如果字符串为空则返回 ""
-static inline NSString* StringIsEmpty (NSString *string){
-    if (string == nil) {
-        return @"";
-    }
-    
-    if (string.length == 0) {
-        return @"";
-    }
-    
-    if ([string isEqualToString:@"<null>"]) {
-        return @"";
-    }
-    
-    if ([string isEqualToString:@"(null)"]) {
-        return @"";
-    }
-    if ([string isKindOfClass:[NSNull class]]) {
-        return @"";
-    }
-    
-    return string;
-}
-//赋值的时候调用这个方法
 + (NSString *)stringWithoutNilFormart:(NSString *)str{
-    return [NSString stringWithFormat:@"%@",StringIsEmpty(str)];
+    if ([str isKindOfClass:[NSNull class]]) return @"";
+    if (str == nil) return @"";
+    if (str.length == 0) return @"";
+    if ([str isEqualToString:@"(null)"]) return @"";
+    if ([str isEqualToString:@"<null>"]) return @"";
+   
+    str = [str stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+     if (str.length == 0) {
+         return @"";
+     }
+     return str;
 }
 #pragma mark - 时间转换 (少了对self的判断)
+
+#pragma mark -- 22.时间戳转字符串(获取的时间距离现在多少)
++ (NSString *)timeSinceNow: (NSString *) theDate{
+    NSDateFormatter *date=[[NSDateFormatter alloc] init];
+    [date setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSDate *d=[date dateFromString:theDate];
+    NSTimeInterval late=[d timeIntervalSince1970]*1;
+    NSDate* dat = [NSDate dateWithTimeIntervalSinceNow:0];
+    NSTimeInterval now=[dat timeIntervalSince1970]*1;
+    NSString *timeString=@"";
+    NSTimeInterval cha=now-late;
+    if (cha/3600<1) {
+        //    发表在一小时之内
+        if (cha/60<1) {
+            timeString = @"1";
+        }else{
+            timeString = [NSString stringWithFormat:@"%f", cha/60];
+            timeString = [timeString substringToIndex:timeString.length-7];
+        }
+        timeString=[NSString stringWithFormat:@"%@分钟前", timeString];
+    }else if (cha/3600>1&&cha/86400<1) {
+        //    在一小时以上24小以内
+        timeString = [NSString stringWithFormat:@"%f", cha/3600];
+        timeString = [timeString substringToIndex:timeString.length-7];
+        timeString=[NSString stringWithFormat:@"%@小时前", timeString];
+    }else if (cha/86400>1&&cha/864000<1){
+        //    发表在24以上10天以内
+        timeString = [NSString stringWithFormat:@"%f", cha/86400];
+        timeString = [timeString substringToIndex:timeString.length-7];
+        timeString=[NSString stringWithFormat:@"%@天前", timeString];
+    }else{
+        //    发表时间大于10天
+        //        timeString = [NSString stringWithFormat:@"%d-%"]
+        NSArray *array = [theDate componentsSeparatedByString:@" "];
+        //        return [array objectAtIndex:0];
+        timeString = [array objectAtIndex:0];
+    }
+    return timeString;
+}
+
+#pragma mark -- 36.时间戳转换成指定格式(@"yyyy-MM-dd HH:mm:ss",@"yyyy-MM-dd")
++ (NSString *)timeChange:(NSString *)time withFormatter:(NSString *)matter{
+    // 格式化时间
+    NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
+    formatter.timeZone = [NSTimeZone timeZoneWithName:@"shanghai"];
+    [formatter setDateStyle:NSDateFormatterMediumStyle];
+    [formatter setTimeStyle:NSDateFormatterShortStyle];
+    [formatter setDateFormat:matter];
+    // 毫秒值转化为秒要除以1000
+    NSDate* date = [NSDate dateWithTimeIntervalSince1970:[time doubleValue]/ 1];
+    NSString* dateString = [formatter stringFromDate:date];
+    return dateString;
+}
+
+#pragma mark -- 39.时间差(当前时间到结束时间的时间差)
++ (NSString *)dateTimeDifferenceWithEndtime:(NSString *)endtime{
+    NSDateFormatter *date = [[NSDateFormatter alloc]init];
+    [date setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSDate* startD = [NSDate dateWithTimeIntervalSinceNow:0];
+    NSDate *endD = [date dateFromString:endtime];
+    NSTimeInterval start = [startD timeIntervalSince1970]*1;
+    NSTimeInterval end = [endD timeIntervalSince1970]*1;
+    NSTimeInterval value = end - start;
+    //int second = (int)value %60;//秒
+    //int minute = (int)value /60%60;
+    //int house = (int)value / (24 *3600)%3600;
+    //int day = (int)value / (24 *3600);
+    NSString *str;
+    //    if (second < 0) {
+    //        second = -second;
+    //    }
+    str = [NSString stringWithFormat:@"%d",(int)value];
+    //    if (day != 0) {
+    //        str = [NSString stringWithFormat:@"耗时%d天%d小时%d分%d秒",day,house,minute,second];
+    //    }else if (day==0 && house !=0) {
+    //        str = [NSString stringWithFormat:@"耗时%d小时%d分%d秒",house,minute,second];
+    //    }else if (day==0 && house==0 && minute!=0) {
+    //        str = [NSString stringWithFormat:@"%d分%d秒",minute,second];
+    //    }else{
+    //        str = [NSString stringWithFormat:@"耗时%d秒",second];
+    //    }
+    return str;
+}
+
 - (NSString *)changeToYearSec {  // 2016-06-22 14:11:57
     NSLog(@"time = %@", self);
     
@@ -183,12 +253,73 @@ static inline NSString* StringIsEmpty (NSString *string){
     return _day;
 }
 #pragma mark - 正则表达式判断
+//验证纯字母
+- (BOOL)validateAllLetter {
+    NSString *regex = @"[a-zA-Z]*";  // 字母或者数字 @"[a-zA-Z0-9]*";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
+    if ([pred evaluateWithObject:self]) {
+        return YES;
+    }
+    return NO;
+}
+//验证纯数字
+- (BOOL)validateAllNumber {
+    NSString *regex = @"[0-9]*";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
+    if ([pred evaluateWithObject:self]) {
+        return YES;
+    }
+    return NO;
+}
+//验证银行卡
+- (BOOL)validateBandCard {
+    int oddSum = 0;     // 奇数和
+    int evenSum = 0;    // 偶数和
+    int allSum = 0;     // 总和
+    for (NSInteger i = 1; i <= self.length; i++) {  // 循环加和
+        NSString *theNumber = [self substringWithRange:NSMakeRange(self.length-i, 1)];
+        int lastNumber = [theNumber intValue];
+        if (i%2 == 0) { // 偶数位
+            lastNumber *= 2;
+            if (lastNumber > 9) {
+                lastNumber -=9;
+            }
+            evenSum += lastNumber;
+        } else{ // 奇数位
+            oddSum += lastNumber;
+        }
+    }
+    allSum = oddSum + evenSum;
+    if (allSum%10 == 0) { // 是否合法
+        return YES;
+    }else {
+        return NO;
+    }
+}
+//验证身份证
+- (BOOL)validateIDCard {
+    if (self.length <= 0) {
+        return NO;
+    }
+    NSString *regex2 = @"^(\\d{14}|\\d{17})(\\d|[xX])$";
+    NSPredicate *identityCardPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex2];
+    return [identityCardPredicate evaluateWithObject:self];
+}
 //验证手机号码
-- (BOOL)validateMobilePhone
-{
-    NSString *phoneRegex = @"^(13[0-9]|14[5|7]|15[0-9]|18[0-9])\\d{8}$";
-    NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", phoneRegex];
-    return [phoneTest evaluateWithObject:self];
+- (BOOL)validateMobilePhone {
+    // @"^(13[0-9]|14[5|7]|15[0-9]|18[0-9])\\d{8}$" 不需要匹配的这么细
+    NSString *pattern = @"^1[34578]\\d{9}$";
+    NSError *error = nil;
+    NSRegularExpression *rge = [NSRegularExpression regularExpressionWithPattern:pattern options:0 error:&error];
+    NSAssert(error == nil,@"正则表达式创建失败:%@",error);
+    //  通过正则表达式匹配字符
+    NSTextCheckingResult *rs = [rge firstMatchInString:self options:0 range:NSMakeRange(0, self.length)];
+    
+    if (rs != nil && self.length == 11) {
+        return YES;
+    }else{
+        return NO;
+    }
 }
 
 //验证固定电话号码
@@ -233,7 +364,7 @@ static inline NSString* StringIsEmpty (NSString *string){
 
 //邮箱
 - (BOOL)validateEMail
-{
+{ 
     NSString *emailRegex = @"^[a-zA-Z0-9_\\.]*@[a-zA-Z0-9_\\.]+(\\.[[a-zA-Z0-9_\\.]{2,4}]+)+$";
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
     return [emailTest evaluateWithObject:self];

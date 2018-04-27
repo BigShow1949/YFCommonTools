@@ -7,6 +7,7 @@
 //
 
 #import "YFAppVersionUpdate.h"
+#import "YFGlobalTool.h"
 
 @interface YFAppVersionUpdate()
 @property (nonatomic, strong) NSString *appID;
@@ -41,8 +42,7 @@
     NSString *updateVersion = dic[@"version"];
 //    NSLog(@"dic = %@", dic);
     //获取当前设备中应用的版本号
-    NSDictionary *appInformationDic = [[NSBundle mainBundle] infoDictionary];
-    NSString *currentVersion = [appInformationDic objectForKey:@"CFBundleShortVersionString"];
+    NSString *currentVersion = [YFGlobalTool appVersion];
 //    if (currentVersion.length == 0) {
 //        return;
 //    }
@@ -88,4 +88,16 @@
     }
 }
 
+// 暂时写这里
+#pragma mark -- 13.跳转到应用页面
++ (void)gotoAPPStore:(NSString *)appid{
+    NSString *str = [NSString stringWithFormat:@"http://itunes.apple.com/us/app/id%@",appid];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+}
+#pragma mark -- 14.跳转到评价页面
++ (void)gotoCommentAPP:(NSString *)appid{
+    NSString *str = [NSString stringWithFormat: @"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id;=%@",
+                     appid ];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+}
 @end

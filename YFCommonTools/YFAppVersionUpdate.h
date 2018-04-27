@@ -32,6 +32,11 @@
 /* 更新的内容 */
 @property (nonatomic, copy) NSString *releaseNotes;
 
+// 暂时先写在这里
+//13.跳转到app store 下载页面
++ (void)gotoAPPStore:(NSString *)appid;
 
+//14.跳转到app store 评论页面
++ (void)gotoCommentAPP:(NSString *)appid;
 
 @end
