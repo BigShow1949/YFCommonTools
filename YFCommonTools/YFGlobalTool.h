@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 /*****************  全局工具(主要是一些零散工具)  *******************/
 

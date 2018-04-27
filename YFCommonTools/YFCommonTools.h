@@ -14,6 +14,7 @@
 #import "YFGlobalMacro.h"
 #import "YFGlobalTool.h"
 #import "YFDevice.h"
+#import "YFSaveTool.h"
 
 // 分类工具
 #import "NSString+Extension_YF.h"

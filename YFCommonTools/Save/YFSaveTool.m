@@ -10,16 +10,33 @@
 
 @implementation YFSaveTool
 
-#pragma mark -- 5.本地存储
-+ (void)writeUserDefaults:(NSString *)stringTmp key:(NSString *)keyTmp{
-    [[NSUserDefaults standardUserDefaults] setObject:stringTmp forKey:keyTmp];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+#pragma mark -- plist
+
+#pragma mark -- NSUserDefaults
+
++ (void)userDefaults:(NSString *)string key:(NSString *)key{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:string forKey:key];
+    [defaults synchronize];
 }
-#pragma mark -- 6.读取本地
-+ (NSString *)readUserDefaults:(NSString *)stringTmp{
-    NSString *str = [[NSUserDefaults standardUserDefaults] objectForKey:stringTmp];
++ (NSString *)userDefaults:(NSString *)string{
+    NSString *str = [[NSUserDefaults standardUserDefaults] objectForKey:string];
     return str;
 }
++ (void)userDefaultsRemoveWithKey:(NSString *)key{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults removeObjectForKey:key];
+}
+
+
+#pragma mark -- NSKeyedArchiver
+
+#pragma mark -- CoreData
+
+#pragma mark -- FMDB
+
+
+
 
 
 #pragma mark -- 23.读取程序内置资源的text文件

@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "YFCommonTools.h"
 
+#import "YFPerson.h"
+
 @interface ViewController ()
 
 @end
@@ -18,9 +20,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self testSafeObject];
+//    [self testSafeObject];
     
-    [self testGloublTool];
+//    [self testGloublTool];
+    
+    [self testSaveTool];
+}
+
+- (void)testSaveTool {
+    // 增加测试数据  person
+    NSMutableDictionary *testDic = [NSMutableDictionary dictionary];
+    // 姓名 年龄 性别 爱好
+    [testDic setObject:@"张三" forKey:@"testName"];
+    [testDic setObject:@"23"  forKey:@"testAge"];
+    [testDic setObject:@"男" forKey:@"testSex"];
+    [testDic setObject:@"打游戏" forKey:@"testHabby"];
+
+    // 存储数据
+    [YFArcherModel saveAction:testDic];
+    // 取出数据
+    YFArcherCoder *coder = [YFArcherModel takeAction];
+    NSLog(@"\n姓名:%@\n年龄:%@\n性别:%@\n爱好:%@", coder.dict[@"testAge"], coder.dict[@"testName"], coder.dict[@"testSex"], coder.dict[@"testHabby"]);
+    
+    
+//    YFPerson *person = [[YFPerson alloc] init];
+//    person.name = @"李四";
+//    person.age = @"22";
+//    [YFArcherModel saveAction:person];
+//
+//    YFArcherCoder *coder2 = [YFArcherModel takeAction];
+//    NSLog(@"dict = %@", coder2.dict);
+
 }
 
 - (void)testGloublTool {

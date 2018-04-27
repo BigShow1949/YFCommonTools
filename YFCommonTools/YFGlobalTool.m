@@ -134,18 +134,18 @@ static const char* jailbreak_apps[] =
     if (path == SystemPathType_Home) {
         NSString *homeDirectory = NSHomeDirectory();
         pathTmp = homeDirectory;
-    }
-    if (path == SystemPathType_Document) {
+        
+    }else if (path == SystemPathType_Document) {
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString *path= [paths objectAtIndex:0];
         pathTmp = path;
-    }
-    if (path == SystemPathType_Cache) {
+        
+    }else if (path == SystemPathType_Cache) {
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
         NSString *path = [paths objectAtIndex:0];
         pathTmp = path;
-    }
-    if (path == SystemPathType_Library) {
+        
+    }else if (path == SystemPathType_Library) {
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
         NSString *path = [paths objectAtIndex:0];
         pathTmp = path;

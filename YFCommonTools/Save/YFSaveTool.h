@@ -8,13 +8,28 @@
 
 #import <Foundation/Foundation.h>
 
+#import "YFArcherCoder.h"
+#import "YFArcherModel.h"
+
 @interface YFSaveTool : NSObject
 
-//5.本地存储
-+ (void)writeUserDefaults:(NSString *)stringTmp  key:(NSString *)keyTmp;
+#pragma mark - plist
 
-//6.读取本地
-+ (NSString *)readUserDefaults:(NSString *)stringTmp;
+#pragma mark - NSUserDefaults
+// 存储
++ (void)userDefaults:(NSString *)stringTmp key:(NSString *)key;
+// 读取
++ (NSString *)userDefaults:(NSString *)string;
+// 删除
++ (void)userDefaultsRemoveWithKey:(NSString *)key;
+
+#pragma mark - NSKeyedArchiver
+
+#pragma mark - CoreData
+
+#pragma mark - FMDB
+
+
 
 
 //23.读取程序内置资源的text文件
