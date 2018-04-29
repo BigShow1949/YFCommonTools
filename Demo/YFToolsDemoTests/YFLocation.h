@@ -1,5 +1,5 @@
 //
-//  YFPerson.h
+//  YFLocation.h
 //  YFToolsDemoTests
 //
 //  Created by apple on 2018/4/28.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface YFPerson : NSObject
-@property (nonatomic, copy) NSString *name;
-@property (nonatomic, assign) NSInteger age;
+@interface YFLocation : NSObject
+@property (nonatomic, copy) NSString *city;
+@property (nonatomic, copy) NSString *province;
 @end

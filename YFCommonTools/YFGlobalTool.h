@@ -20,12 +20,6 @@ typedef NS_ENUM(NSInteger, NetworkType){ // 当前网络状态类型
     NetworkType_WIFI,
 };
 
-typedef NS_ENUM(NSInteger, SystemPathType){ // 系统文件路径
-    SystemPathType_Home = 0, // Home目录
-    SystemPathType_Document,
-    SystemPathType_Cache,
-    SystemPathType_Library,
-};
 
 @interface YFGlobalTool : NSObject
 
@@ -38,8 +32,7 @@ typedef NS_ENUM(NSInteger, SystemPathType){ // 系统文件路径
 //3.判断是否越狱
 + (BOOL)isJailBroken;
 
-//4.获取系统相关路径
-+ (NSString *)getSystemPath:(SystemPathType)path;
+
 
 //5.打开另一个程序
 + (BOOL)openOtherAPP:(NSString *)urlSchemes;

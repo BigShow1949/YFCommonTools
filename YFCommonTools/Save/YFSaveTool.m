@@ -8,9 +8,36 @@
 
 #import "YFSaveTool.h"
 
+NSString * const plistFileDirectoryName = @"YFPlistSave";
+
+
 @implementation YFSaveTool
 
 #pragma mark -- plist
++ (BOOL)plistSaveWithArray:(NSArray *)array fileName:(NSString *)fileName {
+    NSString *docPath = [YFSaveTool getSystemPath:SystemPathType_Document];
+    NSString *path = [docPath stringByAppendingPathComponent: [NSString stringWithFormat:@"%@/%@.plist", plistFileDirectoryName, fileName]];
+    BOOL result = [array writeToFile:path atomically:YES];
+    return result;
+}
+
++ (BOOL)plistSaveWithDictionary:(NSDictionary *)dict fileName:(NSString *)fileName {
+    NSString *docPath = [YFSaveTool getSystemPath:SystemPathType_Document];
+    NSString *path = [docPath stringByAppendingPathComponent: [NSString stringWithFormat:@"%@/%@.plist", plistFileDirectoryName, fileName]];
+    BOOL result = [dict writeToFile:path atomically:YES];
+    return result;
+}
+
++ (NSArray *)plistReadArryWithFileName:(NSString *)fileName {
+    NSString *docPath = [YFSaveTool getSystemPath:SystemPathType_Document];
+    NSString *path = [docPath stringByAppendingPathComponent: [NSString stringWithFormat:@"%@/%@.plist", plistFileDirectoryName, fileName]];
+    return [NSArray arrayWithContentsOfFile:path];
+}
++ (NSDictionary *)plistReadDictionaryWithFileName:(NSString *)fileName {
+    NSString *docPath = [YFSaveTool getSystemPath:SystemPathType_Document];
+    NSString *path = [docPath stringByAppendingPathComponent: [NSString stringWithFormat:@"%@/%@.plist", plistFileDirectoryName, fileName]];
+    return [NSDictionary dictionaryWithContentsOfFile:path];
+}
 
 #pragma mark -- NSUserDefaults
 
@@ -38,7 +65,30 @@
 
 
 
-
+#pragma mark -- 4.获取系统相关路径
++ (NSString *)getSystemPath:(SystemPathType)path {
+    NSString *pathTmp;
+    if (path == SystemPathType_Home) {
+        NSString *homeDirectory = NSHomeDirectory();
+        pathTmp = homeDirectory;
+        
+    }else if (path == SystemPathType_Document) {
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *path= [paths objectAtIndex:0];
+        pathTmp = path;
+        
+    }else if (path == SystemPathType_Cache) {
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+        NSString *path = [paths objectAtIndex:0];
+        pathTmp = path;
+        
+    }else if (path == SystemPathType_Library) {
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+        NSString *path = [paths objectAtIndex:0];
+        pathTmp = path;
+    }
+    return pathTmp;
+}
 #pragma mark -- 23.读取程序内置资源的text文件
 + (NSString *)readTxt:(NSString *)fileName{
     NSString *filePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"txt" ];

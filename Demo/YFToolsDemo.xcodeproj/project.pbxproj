@@ -32,8 +32,26 @@
 		18E3532A20930CE30067C967 /* YFSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3532920930CE20067C967 /* YFSaveTool.m */; };
 		18E3532D20930D180067C967 /* YFArcherCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3532C20930D180067C967 /* YFArcherCoder.m */; };
 		18E3533020930D330067C967 /* YFArcherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3532F20930D330067C967 /* YFArcherModel.m */; };
-		18E3533320930F730067C967 /* YFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3533220930F730067C967 /* YFPerson.m */; };
+		18E3537620931F6B0067C967 /* NSObject+Extension_YF.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3537520931F6B0067C967 /* NSObject+Extension_YF.m */; };
+		18E353862093FB600067C967 /* YFToolsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E353852093FB600067C967 /* YFToolsDemoTests.m */; };
+		18E3538E2093FC000067C967 /* YFArchiverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3538D2093FC000067C967 /* YFArchiverTests.m */; };
+		18E353912093FCC90067C967 /* YFPersonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E353902093FCC90067C967 /* YFPersonTest.m */; };
+		18E353A3209401380067C967 /* YFLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E353A2209401380067C967 /* YFLocation.m */; };
+		18E353A6209401430067C967 /* YFFood.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E353A5209401430067C967 /* YFFood.m */; };
+		18E353AC209404E10067C967 /* NSObject+Archiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E353A8209404E10067C967 /* NSObject+Archiver.m */; };
+		18E353AD209404E10067C967 /* YFArchiverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E353AB209404E10067C967 /* YFArchiverManager.m */; };
+		18E353B02094056E0067C967 /* YFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3539F2094012D0067C967 /* YFPerson.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18E353882093FB600067C967 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CCA1DD20905EA700300966 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18CCA1E420905EA700300966;
+			remoteInfo = YFToolsDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		18CCA1E520905EA700300966 /* YFToolsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YFToolsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,12 +105,35 @@
 		18E3532C20930D180067C967 /* YFArcherCoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFArcherCoder.m; sourceTree = "<group>"; };
 		18E3532E20930D330067C967 /* YFArcherModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFArcherModel.h; sourceTree = "<group>"; };
 		18E3532F20930D330067C967 /* YFArcherModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFArcherModel.m; sourceTree = "<group>"; };
-		18E3533120930F730067C967 /* YFPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFPerson.h; sourceTree = "<group>"; };
-		18E3533220930F730067C967 /* YFPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFPerson.m; sourceTree = "<group>"; };
+		18E3537420931F6B0067C967 /* NSObject+Extension_YF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension_YF.h"; sourceTree = "<group>"; };
+		18E3537520931F6B0067C967 /* NSObject+Extension_YF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension_YF.m"; sourceTree = "<group>"; };
+		18E353832093FB600067C967 /* YFToolsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFToolsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E353852093FB600067C967 /* YFToolsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFToolsDemoTests.m; sourceTree = "<group>"; };
+		18E353872093FB600067C967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E3538D2093FC000067C967 /* YFArchiverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFArchiverTests.m; sourceTree = "<group>"; };
+		18E3538F2093FCC90067C967 /* YFPersonTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFPersonTest.h; sourceTree = "<group>"; };
+		18E353902093FCC90067C967 /* YFPersonTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFPersonTest.m; sourceTree = "<group>"; };
+		18E3539E2094012D0067C967 /* YFPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFPerson.h; sourceTree = "<group>"; };
+		18E3539F2094012D0067C967 /* YFPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFPerson.m; sourceTree = "<group>"; };
+		18E353A1209401380067C967 /* YFLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFLocation.h; sourceTree = "<group>"; };
+		18E353A2209401380067C967 /* YFLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFLocation.m; sourceTree = "<group>"; };
+		18E353A4209401430067C967 /* YFFood.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFFood.h; sourceTree = "<group>"; };
+		18E353A5209401430067C967 /* YFFood.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFFood.m; sourceTree = "<group>"; };
+		18E353A8209404E10067C967 /* NSObject+Archiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Archiver.m"; sourceTree = "<group>"; };
+		18E353A9209404E10067C967 /* YFArchiverManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFArchiverManager.h; sourceTree = "<group>"; };
+		18E353AA209404E10067C967 /* NSObject+Archiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Archiver.h"; sourceTree = "<group>"; };
+		18E353AB209404E10067C967 /* YFArchiverManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFArchiverManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		18CCA1E220905EA700300966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E353802093FB600067C967 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -107,6 +148,7 @@
 			children = (
 				18E352B4209303400067C967 /* YFCommonTools */,
 				18CCA1E720905EA700300966 /* YFToolsDemo */,
+				18E353842093FB600067C967 /* YFToolsDemoTests */,
 				18CCA1E620905EA700300966 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				18CCA1E520905EA700300966 /* YFToolsDemo.app */,
+				18E353832093FB600067C967 /* YFToolsDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,8 +169,8 @@
 				18CCA1E920905EA700300966 /* AppDelegate.m */,
 				18CCA1EB20905EA700300966 /* ViewController.h */,
 				18CCA1EC20905EA700300966 /* ViewController.m */,
-				18E3533120930F730067C967 /* YFPerson.h */,
-				18E3533220930F730067C967 /* YFPerson.m */,
+				18E3539E2094012D0067C967 /* YFPerson.h */,
+				18E3539F2094012D0067C967 /* YFPerson.m */,
 				18CCA1EE20905EA700300966 /* Main.storyboard */,
 				18CCA1F120905EA800300966 /* Assets.xcassets */,
 				18CCA1F320905EA800300966 /* LaunchScreen.storyboard */,
@@ -201,6 +244,8 @@
 				18E353112093039F0067C967 /* NSString+Extension_YF.h */,
 				18E353122093039F0067C967 /* UITextField+Extension_YF.h */,
 				18E353132093039F0067C967 /* UIImage+Extension_YF.m */,
+				18E3537420931F6B0067C967 /* NSObject+Extension_YF.h */,
+				18E3537520931F6B0067C967 /* NSObject+Extension_YF.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -208,6 +253,7 @@
 		18E3532720930CE20067C967 /* Save */ = {
 			isa = PBXGroup;
 			children = (
+				18E353A7209404E10067C967 /* Archiver */,
 				18E3532820930CE20067C967 /* YFSaveTool.h */,
 				18E3532920930CE20067C967 /* YFSaveTool.m */,
 				18E3532B20930D180067C967 /* YFArcherCoder.h */,
@@ -216,6 +262,33 @@
 				18E3532F20930D330067C967 /* YFArcherModel.m */,
 			);
 			path = Save;
+			sourceTree = "<group>";
+		};
+		18E353842093FB600067C967 /* YFToolsDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				18E353852093FB600067C967 /* YFToolsDemoTests.m */,
+				18E3538D2093FC000067C967 /* YFArchiverTests.m */,
+				18E3538F2093FCC90067C967 /* YFPersonTest.h */,
+				18E353902093FCC90067C967 /* YFPersonTest.m */,
+				18E353A1209401380067C967 /* YFLocation.h */,
+				18E353A2209401380067C967 /* YFLocation.m */,
+				18E353A4209401430067C967 /* YFFood.h */,
+				18E353A5209401430067C967 /* YFFood.m */,
+				18E353872093FB600067C967 /* Info.plist */,
+			);
+			path = YFToolsDemoTests;
+			sourceTree = "<group>";
+		};
+		18E353A7209404E10067C967 /* Archiver */ = {
+			isa = PBXGroup;
+			children = (
+				18E353AA209404E10067C967 /* NSObject+Archiver.h */,
+				18E353A8209404E10067C967 /* NSObject+Archiver.m */,
+				18E353A9209404E10067C967 /* YFArchiverManager.h */,
+				18E353AB209404E10067C967 /* YFArchiverManager.m */,
+			);
+			path = Archiver;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +311,24 @@
 			productReference = 18CCA1E520905EA700300966 /* YFToolsDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		18E353822093FB600067C967 /* YFToolsDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E3538A2093FB600067C967 /* Build configuration list for PBXNativeTarget "YFToolsDemoTests" */;
+			buildPhases = (
+				18E3537F2093FB600067C967 /* Sources */,
+				18E353802093FB600067C967 /* Frameworks */,
+				18E353812093FB600067C967 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18E353892093FB600067C967 /* PBXTargetDependency */,
+			);
+			name = YFToolsDemoTests;
+			productName = YFToolsDemoTests;
+			productReference = 18E353832093FB600067C967 /* YFToolsDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -249,6 +340,10 @@
 				TargetAttributes = {
 					18CCA1E420905EA700300966 = {
 						CreatedOnToolsVersion = 9.3;
+					};
+					18E353822093FB600067C967 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 18CCA1E420905EA700300966;
 					};
 				};
 			};
@@ -266,6 +361,7 @@
 			projectRoot = "";
 			targets = (
 				18CCA1E420905EA700300966 /* YFToolsDemo */,
+				18E353822093FB600067C967 /* YFToolsDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -281,6 +377,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18E353812093FB600067C967 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -291,18 +394,21 @@
 				18E35323209303A00067C967 /* UIButton+Extension_YF.m in Sources */,
 				18E35322209303A00067C967 /* NSString+Extension_YF.m in Sources */,
 				18E3531A209303A00067C967 /* NSMutableDictionary+Safe.m in Sources */,
+				18E353AD209404E10067C967 /* YFArchiverManager.m in Sources */,
 				18E35319209303A00067C967 /* NSMutableArray+Safe.m in Sources */,
 				18E35316209303A00067C967 /* YFDevice.m in Sources */,
+				18E353AC209404E10067C967 /* NSObject+Archiver.m in Sources */,
 				18E3531C209303A00067C967 /* NSDictionary+Safe.m in Sources */,
 				18E35325209303A00067C967 /* UIImage+Extension_YF.m in Sources */,
 				18E35318209303A00067C967 /* YFGlobalTool.m in Sources */,
+				18E3537620931F6B0067C967 /* NSObject+Extension_YF.m in Sources */,
 				18E3531D209303A00067C967 /* NSObject+Swizzling.m in Sources */,
-				18E3533320930F730067C967 /* YFPerson.m in Sources */,
 				18CCA1ED20905EA700300966 /* ViewController.m in Sources */,
 				18E35321209303A00067C967 /* UIColor+Extension_YF.m in Sources */,
 				18E3531F209303A00067C967 /* NSObject+ImpChangeTool.m in Sources */,
 				18E3531B209303A00067C967 /* NSMutableString+Safe.m in Sources */,
 				18CCA1F820905EA800300966 /* main.m in Sources */,
+				18E353B02094056E0067C967 /* YFPerson.m in Sources */,
 				18E35317209303A00067C967 /* YFLocationConverter.m in Sources */,
 				18E3532A20930CE30067C967 /* YFSaveTool.m in Sources */,
 				18E3532D20930D180067C967 /* YFArcherCoder.m in Sources */,
@@ -314,7 +420,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18E3537F2093FB600067C967 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E353A3209401380067C967 /* YFLocation.m in Sources */,
+				18E3538E2093FC000067C967 /* YFArchiverTests.m in Sources */,
+				18E353862093FB600067C967 /* YFToolsDemoTests.m in Sources */,
+				18E353912093FCC90067C967 /* YFPersonTest.m in Sources */,
+				18E353A6209401430067C967 /* YFFood.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18E353892093FB600067C967 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18CCA1E420905EA700300966 /* YFToolsDemo */;
+			targetProxy = 18E353882093FB600067C967 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		18CCA1EE20905EA700300966 /* Main.storyboard */ = {
@@ -482,6 +608,44 @@
 			};
 			name = Release;
 		};
+		18E3538B2093FB600067C967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JJP29A3NU;
+				INFOPLIST_FILE = YFToolsDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BigShow.YFToolsDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YFToolsDemo.app/YFToolsDemo";
+			};
+			name = Debug;
+		};
+		18E3538C2093FB600067C967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JJP29A3NU;
+				INFOPLIST_FILE = YFToolsDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BigShow.YFToolsDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YFToolsDemo.app/YFToolsDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -499,6 +663,15 @@
 			buildConfigurations = (
 				18CCA1FC20905EA800300966 /* Debug */,
 				18CCA1FD20905EA800300966 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E3538A2093FB600067C967 /* Build configuration list for PBXNativeTarget "YFToolsDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E3538B2093FB600067C967 /* Debug */,
+				18E3538C2093FB600067C967 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -10,10 +10,25 @@
 
 #import "YFArcherCoder.h"
 #import "YFArcherModel.h"
+#import "NSObject+Archiver.h"
+
+typedef NS_ENUM(NSInteger, SystemPathType){ // 系统文件路径
+    SystemPathType_Home = 0, // Home目录
+    SystemPathType_Document,
+    SystemPathType_Cache,
+    SystemPathType_Library,
+};
+
 
 @interface YFSaveTool : NSObject
 
 #pragma mark - plist
+
++ (BOOL)plistSaveWithArray:(NSArray *)array fileName:(NSString *)fileName;
++ (NSArray *)plistReadArryWithFileName:(NSString *)fileName;
+
++ (BOOL)plistSaveWithDictionary:(NSDictionary *)dict fileName:(NSString *)fileName;
++ (NSDictionary *)plistReadDictionaryWithFileName:(NSString *)fileName;
 
 #pragma mark - NSUserDefaults
 // 存储
@@ -25,11 +40,15 @@
 
 #pragma mark - NSKeyedArchiver
 
+ // 见 NSObject+Archiver.h 文件 
+
 #pragma mark - CoreData
 
 #pragma mark - FMDB
 
 
+//4.获取系统相关路径
++ (NSString *)getSystemPath:(SystemPathType)path;
 
 
 //23.读取程序内置资源的text文件

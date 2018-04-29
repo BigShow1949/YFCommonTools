@@ -24,10 +24,22 @@
     
 //    [self testGloublTool];
     
+    [self testArcherTool];
+    
     [self testSaveTool];
 }
 
 - (void)testSaveTool {
+    NSString *str = [YFSaveTool getSystemPath:SystemPathType_Document];
+    NSLog(@"str = %@", str);
+    [YFSaveTool savePlist:@"hehe" localPath:str];
+    
+    id result = [YFSaveTool readPlist:str];
+    NSLog(@"[result class] = %@", [result class]);
+    NSLog(@"result = %@", result);
+}
+
+- (void)testArcherTool {
     // 增加测试数据  person
     NSMutableDictionary *testDic = [NSMutableDictionary dictionary];
     // 姓名 年龄 性别 爱好
@@ -41,13 +53,28 @@
     // 取出数据
     YFArcherCoder *coder = [YFArcherModel takeAction];
     NSLog(@"\n姓名:%@\n年龄:%@\n性别:%@\n爱好:%@", coder.dict[@"testAge"], coder.dict[@"testName"], coder.dict[@"testSex"], coder.dict[@"testHabby"]);
+
     
+    // 存储模型
+    YFPerson *person = [[YFPerson alloc] init];
+    person.name = @"李四";
+    person.age = 22;
+    [person archiveWithName:@"YFPerson"];
     
-//    YFPerson *person = [[YFPerson alloc] init];
-//    person.name = @"李四";
-//    person.age = @"22";
-//    [YFArcherModel saveAction:person];
-//
+    YFPerson *person2 = [YFPerson unArchiveWithName:@"YFPerson"];
+    NSLog(@"name = %@", person2.name);
+    NSLog(@"age = %d", person2.age);
+    
+    // 存储字典
+    [testDic archiveWithName:@"dict"];
+    
+    NSDictionary *dict2 = [NSDictionary unArchiveWithName:@"dict"];
+    NSLog(@"dict2 = %@", dict2);
+    NSLog(@"dict2.class = %@", [dict2 class]);
+
+    NSLog(@"testName = %@", dict2[@"testName"]);
+    NSLog(@"testAge = %@", dict2[@"testAge"]);
+
 //    YFArcherCoder *coder2 = [YFArcherModel takeAction];
 //    NSLog(@"dict = %@", coder2.dict);
 
@@ -83,6 +110,8 @@
     // 测试字符串
     NSMutableString *tableString = [[NSMutableString alloc] initWithFormat:@"防止项目数组字典越界崩溃"];
     NSLog(@"%@",[tableString substringFromIndex:100]);
+    
+    
 }
 
 @end

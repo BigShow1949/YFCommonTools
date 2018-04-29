@@ -128,30 +128,7 @@ static const char* jailbreak_apps[] =
     return NO;
 }
 
-#pragma mark -- 4.获取系统相关路径
-+ (NSString *)getSystemPath:(SystemPathType)path {
-    NSString *pathTmp;
-    if (path == SystemPathType_Home) {
-        NSString *homeDirectory = NSHomeDirectory();
-        pathTmp = homeDirectory;
-        
-    }else if (path == SystemPathType_Document) {
-        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-        NSString *path= [paths objectAtIndex:0];
-        pathTmp = path;
-        
-    }else if (path == SystemPathType_Cache) {
-        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
-        NSString *path = [paths objectAtIndex:0];
-        pathTmp = path;
-        
-    }else if (path == SystemPathType_Library) {
-        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
-        NSString *path = [paths objectAtIndex:0];
-        pathTmp = path;
-    }
-    return pathTmp;
-}
+
 #pragma mark -- 5.打开另一个程序
 + (BOOL)openOtherAPP:(NSString *)urlSchemes{
     NSURL *urlTmp = [NSURL URLWithString:urlSchemes];
