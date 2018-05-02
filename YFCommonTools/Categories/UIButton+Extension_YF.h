@@ -23,4 +23,11 @@ typedef NS_ENUM(NSInteger,LLButtonStyle) {
 //调用这个方法前，必须先设置好button的image和title/attributedtitle 要不然无法生效
 - (void)layoutButtonWithEdgeInsetsStyle:(LLButtonStyle)style
                         imageTitleSpace:(CGFloat)space;
+
+#pragma mark - 按钮点击时间间隔
+#define defaultInterval .5  //默认时间间隔
+/**设置点击时间间隔*/
+@property (nonatomic, assign) NSTimeInterval timeInterval;
+
+
 @end

@@ -59,7 +59,9 @@ NSString * const plistFileDirectoryName = @"YFPlistSave";
 #pragma mark -- NSKeyedArchiver
 
 #pragma mark -- CoreData
-
++ (void)coreDataSaveWithName:(NSString *)name {
+    
+}
 #pragma mark -- FMDB
 
 

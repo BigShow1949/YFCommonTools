@@ -23,14 +23,17 @@ typedef NS_ENUM(NSInteger, SystemPathType){ // 系统文件路径
 @interface YFSaveTool : NSObject
 
 #pragma mark - plist
-
+// 存数组
 + (BOOL)plistSaveWithArray:(NSArray *)array fileName:(NSString *)fileName;
+// 取数组
 + (NSArray *)plistReadArryWithFileName:(NSString *)fileName;
 
+// 存字典
 + (BOOL)plistSaveWithDictionary:(NSDictionary *)dict fileName:(NSString *)fileName;
+// 取字典
 + (NSDictionary *)plistReadDictionaryWithFileName:(NSString *)fileName;
 
-#pragma mark - NSUserDefaults
+#pragma mark - NSUserDefaults 偏好设置
 // 存储
 + (void)userDefaults:(NSString *)stringTmp key:(NSString *)key;
 // 读取
@@ -43,6 +46,9 @@ typedef NS_ENUM(NSInteger, SystemPathType){ // 系统文件路径
  // 见 NSObject+Archiver.h 文件 
 
 #pragma mark - CoreData
+
++ (void)coreDataSaveWithName:(NSString *)name;
+
 
 #pragma mark - FMDB
 

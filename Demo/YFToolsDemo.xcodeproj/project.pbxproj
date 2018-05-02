@@ -41,6 +41,8 @@
 		18E353AC209404E10067C967 /* NSObject+Archiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E353A8209404E10067C967 /* NSObject+Archiver.m */; };
 		18E353AD209404E10067C967 /* YFArchiverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E353AB209404E10067C967 /* YFArchiverManager.m */; };
 		18E353B02094056E0067C967 /* YFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3539F2094012D0067C967 /* YFPerson.m */; };
+		18E353B620956CA80067C967 /* YFStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E353B520956CA80067C967 /* YFStudent.m */; };
+		18E353B920956F720067C967 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18E353B720956F720067C967 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +125,10 @@
 		18E353A9209404E10067C967 /* YFArchiverManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFArchiverManager.h; sourceTree = "<group>"; };
 		18E353AA209404E10067C967 /* NSObject+Archiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Archiver.h"; sourceTree = "<group>"; };
 		18E353AB209404E10067C967 /* YFArchiverManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFArchiverManager.m; sourceTree = "<group>"; };
+		18E353B420956CA80067C967 /* YFStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFStudent.h; sourceTree = "<group>"; };
+		18E353B520956CA80067C967 /* YFStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFStudent.m; sourceTree = "<group>"; };
+		18E353B820956F720067C967 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		18E353BA2095A0A60067C967 /* YFToolsDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YFToolsDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +156,7 @@
 				18CCA1E720905EA700300966 /* YFToolsDemo */,
 				18E353842093FB600067C967 /* YFToolsDemoTests */,
 				18CCA1E620905EA700300966 /* Products */,
+				18E353BA2095A0A60067C967 /* YFToolsDemo-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,12 +172,15 @@
 		18CCA1E720905EA700300966 /* YFToolsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				18E353B720956F720067C967 /* Model.xcdatamodeld */,
 				18CCA1E820905EA700300966 /* AppDelegate.h */,
 				18CCA1E920905EA700300966 /* AppDelegate.m */,
 				18CCA1EB20905EA700300966 /* ViewController.h */,
 				18CCA1EC20905EA700300966 /* ViewController.m */,
 				18E3539E2094012D0067C967 /* YFPerson.h */,
 				18E3539F2094012D0067C967 /* YFPerson.m */,
+				18E353B420956CA80067C967 /* YFStudent.h */,
+				18E353B520956CA80067C967 /* YFStudent.m */,
 				18CCA1EE20905EA700300966 /* Main.storyboard */,
 				18CCA1F120905EA800300966 /* Assets.xcassets */,
 				18CCA1F320905EA800300966 /* LaunchScreen.storyboard */,
@@ -234,15 +244,15 @@
 		18E353092093039F0067C967 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				18E3530A2093039F0067C967 /* UIColor+Extension_YF.m */,
+				18E353112093039F0067C967 /* NSString+Extension_YF.h */,
 				18E3530B2093039F0067C967 /* NSString+Extension_YF.m */,
+				18E353102093039F0067C967 /* UIButton+Extension_YF.h */,
 				18E3530C2093039F0067C967 /* UIButton+Extension_YF.m */,
-				18E3530D2093039F0067C967 /* UIImage+Extension_YF.h */,
+				18E353122093039F0067C967 /* UITextField+Extension_YF.h */,
 				18E3530E2093039F0067C967 /* UITextField+Extension_YF.m */,
 				18E3530F2093039F0067C967 /* UIColor+Extension_YF.h */,
-				18E353102093039F0067C967 /* UIButton+Extension_YF.h */,
-				18E353112093039F0067C967 /* NSString+Extension_YF.h */,
-				18E353122093039F0067C967 /* UITextField+Extension_YF.h */,
+				18E3530A2093039F0067C967 /* UIColor+Extension_YF.m */,
+				18E3530D2093039F0067C967 /* UIImage+Extension_YF.h */,
 				18E353132093039F0067C967 /* UIImage+Extension_YF.m */,
 				18E3537420931F6B0067C967 /* NSObject+Extension_YF.h */,
 				18E3537520931F6B0067C967 /* NSObject+Extension_YF.m */,
@@ -340,6 +350,7 @@
 				TargetAttributes = {
 					18CCA1E420905EA700300966 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					18E353822093FB600067C967 = {
 						CreatedOnToolsVersion = 9.3;
@@ -393,6 +404,8 @@
 			files = (
 				18E35323209303A00067C967 /* UIButton+Extension_YF.m in Sources */,
 				18E35322209303A00067C967 /* NSString+Extension_YF.m in Sources */,
+				18E353B620956CA80067C967 /* YFStudent.m in Sources */,
+				18E353B920956F720067C967 /* Model.xcdatamodeld in Sources */,
 				18E3531A209303A00067C967 /* NSMutableDictionary+Safe.m in Sources */,
 				18E353AD209404E10067C967 /* YFArchiverManager.m in Sources */,
 				18E35319209303A00067C967 /* NSMutableArray+Safe.m in Sources */,
@@ -576,6 +589,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JJP29A3NU;
 				INFOPLIST_FILE = YFToolsDemo/Info.plist;
@@ -586,6 +600,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = BigShow.YFToolsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YFToolsDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -594,6 +611,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JJP29A3NU;
 				INFOPLIST_FILE = YFToolsDemo/Info.plist;
@@ -604,6 +622,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = BigShow.YFToolsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YFToolsDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -677,6 +697,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18E353B720956F720067C967 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18E353B820956F720067C967 /* Model.xcdatamodel */,
+			);
+			currentVersion = 18E353B820956F720067C967 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 18CCA1DD20905EA700300966 /* Project object */;
 }
