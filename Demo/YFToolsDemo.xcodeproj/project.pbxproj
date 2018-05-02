@@ -34,15 +34,16 @@
 		18E3533020930D330067C967 /* YFArcherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3532F20930D330067C967 /* YFArcherModel.m */; };
 		18E3537620931F6B0067C967 /* NSObject+Extension_YF.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3537520931F6B0067C967 /* NSObject+Extension_YF.m */; };
 		18E353862093FB600067C967 /* YFToolsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E353852093FB600067C967 /* YFToolsDemoTests.m */; };
-		18E3538E2093FC000067C967 /* YFArchiverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3538D2093FC000067C967 /* YFArchiverTests.m */; };
-		18E353912093FCC90067C967 /* YFPersonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E353902093FCC90067C967 /* YFPersonTest.m */; };
-		18E353A3209401380067C967 /* YFLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E353A2209401380067C967 /* YFLocation.m */; };
-		18E353A6209401430067C967 /* YFFood.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E353A5209401430067C967 /* YFFood.m */; };
 		18E353AC209404E10067C967 /* NSObject+Archiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E353A8209404E10067C967 /* NSObject+Archiver.m */; };
 		18E353AD209404E10067C967 /* YFArchiverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E353AB209404E10067C967 /* YFArchiverManager.m */; };
 		18E353B02094056E0067C967 /* YFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3539F2094012D0067C967 /* YFPerson.m */; };
 		18E353B620956CA80067C967 /* YFStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E353B520956CA80067C967 /* YFStudent.m */; };
 		18E353B920956F720067C967 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18E353B720956F720067C967 /* Model.xcdatamodeld */; };
+		18EAC00E20994EA800911274 /* YFLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC00820994EA800911274 /* YFLocation.m */; };
+		18EAC00F20994EA800911274 /* YFArchiverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC00920994EA800911274 /* YFArchiverTests.m */; };
+		18EAC01020994EA800911274 /* YFPersonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC00A20994EA800911274 /* YFPersonTest.m */; };
+		18EAC01120994EA800911274 /* YFFood.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC00B20994EA800911274 /* YFFood.m */; };
+		18EAC01320994EC300911274 /* NSStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC01220994EC300911274 /* NSStringTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,15 +113,8 @@
 		18E353832093FB600067C967 /* YFToolsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFToolsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E353852093FB600067C967 /* YFToolsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFToolsDemoTests.m; sourceTree = "<group>"; };
 		18E353872093FB600067C967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18E3538D2093FC000067C967 /* YFArchiverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFArchiverTests.m; sourceTree = "<group>"; };
-		18E3538F2093FCC90067C967 /* YFPersonTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFPersonTest.h; sourceTree = "<group>"; };
-		18E353902093FCC90067C967 /* YFPersonTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFPersonTest.m; sourceTree = "<group>"; };
 		18E3539E2094012D0067C967 /* YFPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFPerson.h; sourceTree = "<group>"; };
 		18E3539F2094012D0067C967 /* YFPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFPerson.m; sourceTree = "<group>"; };
-		18E353A1209401380067C967 /* YFLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFLocation.h; sourceTree = "<group>"; };
-		18E353A2209401380067C967 /* YFLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFLocation.m; sourceTree = "<group>"; };
-		18E353A4209401430067C967 /* YFFood.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFFood.h; sourceTree = "<group>"; };
-		18E353A5209401430067C967 /* YFFood.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFFood.m; sourceTree = "<group>"; };
 		18E353A8209404E10067C967 /* NSObject+Archiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Archiver.m"; sourceTree = "<group>"; };
 		18E353A9209404E10067C967 /* YFArchiverManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFArchiverManager.h; sourceTree = "<group>"; };
 		18E353AA209404E10067C967 /* NSObject+Archiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Archiver.h"; sourceTree = "<group>"; };
@@ -129,6 +123,14 @@
 		18E353B520956CA80067C967 /* YFStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFStudent.m; sourceTree = "<group>"; };
 		18E353B820956F720067C967 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		18E353BA2095A0A60067C967 /* YFToolsDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YFToolsDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		18EAC00620994EA800911274 /* YFPersonTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFPersonTest.h; sourceTree = "<group>"; };
+		18EAC00720994EA800911274 /* YFFood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFFood.h; sourceTree = "<group>"; };
+		18EAC00820994EA800911274 /* YFLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFLocation.m; sourceTree = "<group>"; };
+		18EAC00920994EA800911274 /* YFArchiverTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFArchiverTests.m; sourceTree = "<group>"; };
+		18EAC00A20994EA800911274 /* YFPersonTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFPersonTest.m; sourceTree = "<group>"; };
+		18EAC00B20994EA800911274 /* YFFood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFFood.m; sourceTree = "<group>"; };
+		18EAC00C20994EA800911274 /* YFLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLocation.h; sourceTree = "<group>"; };
+		18EAC01220994EC300911274 /* NSStringTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,13 +280,8 @@
 			isa = PBXGroup;
 			children = (
 				18E353852093FB600067C967 /* YFToolsDemoTests.m */,
-				18E3538D2093FC000067C967 /* YFArchiverTests.m */,
-				18E3538F2093FCC90067C967 /* YFPersonTest.h */,
-				18E353902093FCC90067C967 /* YFPersonTest.m */,
-				18E353A1209401380067C967 /* YFLocation.h */,
-				18E353A2209401380067C967 /* YFLocation.m */,
-				18E353A4209401430067C967 /* YFFood.h */,
-				18E353A5209401430067C967 /* YFFood.m */,
+				18EAC00D20994EA800911274 /* CategoriesTest */,
+				18EAC00520994EA800911274 /* SaveTest */,
 				18E353872093FB600067C967 /* Info.plist */,
 			);
 			path = YFToolsDemoTests;
@@ -299,6 +296,28 @@
 				18E353AB209404E10067C967 /* YFArchiverManager.m */,
 			);
 			path = Archiver;
+			sourceTree = "<group>";
+		};
+		18EAC00520994EA800911274 /* SaveTest */ = {
+			isa = PBXGroup;
+			children = (
+				18EAC00620994EA800911274 /* YFPersonTest.h */,
+				18EAC00720994EA800911274 /* YFFood.h */,
+				18EAC00820994EA800911274 /* YFLocation.m */,
+				18EAC00920994EA800911274 /* YFArchiverTests.m */,
+				18EAC00A20994EA800911274 /* YFPersonTest.m */,
+				18EAC00B20994EA800911274 /* YFFood.m */,
+				18EAC00C20994EA800911274 /* YFLocation.h */,
+			);
+			path = SaveTest;
+			sourceTree = "<group>";
+		};
+		18EAC00D20994EA800911274 /* CategoriesTest */ = {
+			isa = PBXGroup;
+			children = (
+				18EAC01220994EC300911274 /* NSStringTest.m */,
+			);
+			path = CategoriesTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,11 +456,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E353A3209401380067C967 /* YFLocation.m in Sources */,
-				18E3538E2093FC000067C967 /* YFArchiverTests.m in Sources */,
 				18E353862093FB600067C967 /* YFToolsDemoTests.m in Sources */,
-				18E353912093FCC90067C967 /* YFPersonTest.m in Sources */,
-				18E353A6209401430067C967 /* YFFood.m in Sources */,
+				18EAC01320994EC300911274 /* NSStringTest.m in Sources */,
+				18EAC00F20994EA800911274 /* YFArchiverTests.m in Sources */,
+				18EAC00E20994EA800911274 /* YFLocation.m in Sources */,
+				18EAC01120994EA800911274 /* YFFood.m in Sources */,
+				18EAC01020994EA800911274 /* YFPersonTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

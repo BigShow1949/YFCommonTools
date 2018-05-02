@@ -31,6 +31,8 @@
     
 //    [self testSaveTool];
     
+    NSString *name = @"张 三";
+    NSString *pinyin = [name getPinYinFromString:name];
     [self testCoreData];
 }
 

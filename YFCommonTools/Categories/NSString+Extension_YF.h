@@ -166,4 +166,10 @@
  *  计算当前文件\文件夹的内容大小
  */
 - (NSInteger)fileSize;
+
+#pragma mark - 汉语转拼音
+/**
+ *  汉语转拼音
+ */
+- (NSString *)getPinYinFromString:(NSString *)string;
 @end
