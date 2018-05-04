@@ -257,10 +257,10 @@
 		18E352F32093039F0067C967 /* SafeObject */ = {
 			isa = PBXGroup;
 			children = (
+				18E352F72093039F0067C967 /* SafeObject.h */,
 				18E352F42093039F0067C967 /* NSMutableString+Safe.h */,
 				18E352F52093039F0067C967 /* NSMutableArray+Safe.m */,
 				18E352F62093039F0067C967 /* NSDictionary+Safe.h */,
-				18E352F72093039F0067C967 /* SafeObject.h */,
 				18E352F82093039F0067C967 /* NSMutableDictionary+Safe.m */,
 				18E352F92093039F0067C967 /* NSObject+ImpChangeTool.h */,
 				18E352FA2093039F0067C967 /* NSArray+Safe.h */,
