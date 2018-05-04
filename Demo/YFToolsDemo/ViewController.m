@@ -13,6 +13,8 @@
 #import "YFStudent.h"
 
 #import <CoreData/CoreData.h>
+#import "FOXNavigationViewController.h"
+#import "FOXMainViewController.h"
 
 @interface ViewController ()
 
@@ -23,6 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self navigationTest];
+    
 //    [self testSafeObject];
     
 //    [self testGloublTool];
@@ -31,32 +35,11 @@
     
 //    [self testSaveTool];
     
-    NSString *name = @"张 三";
-    NSString *pinyin = [name getPinYinFromString:name];
     [self testCoreData];
 }
 
 - (void)testCoreData {
-//    //表格结构：NSEntityDescription 相当于数据库中的一个表，TA描述一种抽象数据类型
-//    //+insertNewObjectForEntityForName:inManagedObjectContext: 工厂方法，根据给定的 Entity 描述，生成相应的 NSManagedObject 对象，并插入到 ManagedObjectContext 中
-//    NSManagedObjectContext *managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSConfinementConcurrencyType];
-//    YFStudent *student = [NSEntityDescription insertNewObjectForEntityForName:@"Student" inManagedObjectContext:managedObjectContext];
-//    //通过上面的代码可以得到student这个表的实例，然后可以使用这个实例去为表中的属性赋值
-//    student.name = @"like";
-//    student.age = 12;
-    
-    
-    
-    // 应用程序的数据模型，数据库中所有表格和他们之间的联系：NSManagedObjectModel
-    // 系统会读取model文件来声称NSManagedObjectModel对象，
-    // model ：对于class,model称之为 entity; 对于instant variable, model 称之为property
-    // model包含两种property: attributes 和 relationships. attribute为简单数据类型,如一个字符串,日期,数字
-    
-//    NSManagedObjectModel   * model    = [self managedObjectModel];//获取实例
-//    NSDictionary           * entities = [model entitiesByName];//entitiesByName 得到所有的表的名字
-//    NSEntityDescription    * entity   = [entities valueForKey:@"Student"];//从里面找出名为 Student 的表
-    
-    
+  
 }
 
 - (void)testSaveTool {
@@ -142,6 +125,23 @@
     NSLog(@"%@",[tableString substringFromIndex:100]);
     
     
+}
+
+- (void)navigationTest {
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(50, 100, 60, 55)];
+    [btn setTitle:@"导航栏" forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor redColor];
+    [btn addTarget:self action:@selector(naviClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+
+- (void)naviClick {
+    NSLog(@"==========点击导航栏");
+    FOXMainViewController *mainVC = [[FOXMainViewController alloc] init];
+    
+    FOXNavigationViewController *navi = [[FOXNavigationViewController alloc] initWithRootViewController:mainVC];
+//    [self.navigationController pushViewController:navi animated:YES];
+    [self presentViewController:navi animated:YES completion:nil];
 }
 
 @end

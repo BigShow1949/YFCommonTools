@@ -38,12 +38,23 @@
 		18E353AD209404E10067C967 /* YFArchiverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E353AB209404E10067C967 /* YFArchiverManager.m */; };
 		18E353B02094056E0067C967 /* YFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3539F2094012D0067C967 /* YFPerson.m */; };
 		18E353B620956CA80067C967 /* YFStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E353B520956CA80067C967 /* YFStudent.m */; };
-		18E353B920956F720067C967 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18E353B720956F720067C967 /* Model.xcdatamodeld */; };
 		18EAC00E20994EA800911274 /* YFLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC00820994EA800911274 /* YFLocation.m */; };
 		18EAC00F20994EA800911274 /* YFArchiverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC00920994EA800911274 /* YFArchiverTests.m */; };
 		18EAC01020994EA800911274 /* YFPersonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC00A20994EA800911274 /* YFPersonTest.m */; };
 		18EAC01120994EA800911274 /* YFFood.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC00B20994EA800911274 /* YFFood.m */; };
 		18EAC01320994EC300911274 /* NSStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC01220994EC300911274 /* NSStringTest.m */; };
+		18EAC07C209962EE00911274 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC07A209962EE00911274 /* Model.xcdatamodeld */; };
+		18EAC12A209C324000911274 /* back_item@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EAC125209C324000911274 /* back_item@3x.png */; };
+		18EAC12B209C324000911274 /* back_item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EAC126209C324000911274 /* back_item@2x.png */; };
+		18EAC12C209C324000911274 /* FOXNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC127209C324000911274 /* FOXNavigationViewController.m */; };
+		18EAC12D209C324000911274 /* UIViewController+FOXNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC128209C324000911274 /* UIViewController+FOXNavigationBar.m */; };
+		18EAC12E209C324000911274 /* FOXNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC129209C324000911274 /* FOXNavigationBar.m */; };
+		18EAC13C209C327100911274 /* FOXThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC131209C327100911274 /* FOXThirdViewController.m */; };
+		18EAC13D209C327100911274 /* FOXFistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC134209C327100911274 /* FOXFistViewController.m */; };
+		18EAC13E209C327100911274 /* FOXMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC136209C327100911274 /* FOXMainViewController.m */; };
+		18EAC13F209C327100911274 /* FOXFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC138209C327100911274 /* FOXFourthViewController.m */; };
+		18EAC140209C327100911274 /* FOXFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC139209C327100911274 /* FOXFiveViewController.m */; };
+		18EAC141209C327100911274 /* FOXSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC13B209C327100911274 /* FOXSecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,7 +132,6 @@
 		18E353AB209404E10067C967 /* YFArchiverManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFArchiverManager.m; sourceTree = "<group>"; };
 		18E353B420956CA80067C967 /* YFStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFStudent.h; sourceTree = "<group>"; };
 		18E353B520956CA80067C967 /* YFStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFStudent.m; sourceTree = "<group>"; };
-		18E353B820956F720067C967 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		18E353BA2095A0A60067C967 /* YFToolsDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YFToolsDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		18EAC00620994EA800911274 /* YFPersonTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFPersonTest.h; sourceTree = "<group>"; };
 		18EAC00720994EA800911274 /* YFFood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFFood.h; sourceTree = "<group>"; };
@@ -131,6 +141,27 @@
 		18EAC00B20994EA800911274 /* YFFood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFFood.m; sourceTree = "<group>"; };
 		18EAC00C20994EA800911274 /* YFLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLocation.h; sourceTree = "<group>"; };
 		18EAC01220994EC300911274 /* NSStringTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringTest.m; sourceTree = "<group>"; };
+		18EAC07B209962EE00911274 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		18EAC121209C324000911274 /* FOXNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOXNavigationViewController.h; sourceTree = "<group>"; };
+		18EAC122209C324000911274 /* UIViewController+FOXNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FOXNavigationBar.h"; sourceTree = "<group>"; };
+		18EAC123209C324000911274 /* FOXNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOXNavigationBar.h; sourceTree = "<group>"; };
+		18EAC125209C324000911274 /* back_item@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_item@3x.png"; sourceTree = "<group>"; };
+		18EAC126209C324000911274 /* back_item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_item@2x.png"; sourceTree = "<group>"; };
+		18EAC127209C324000911274 /* FOXNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOXNavigationViewController.m; sourceTree = "<group>"; };
+		18EAC128209C324000911274 /* UIViewController+FOXNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FOXNavigationBar.m"; sourceTree = "<group>"; };
+		18EAC129209C324000911274 /* FOXNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOXNavigationBar.m; sourceTree = "<group>"; };
+		18EAC130209C327100911274 /* FOXFourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOXFourthViewController.h; sourceTree = "<group>"; };
+		18EAC131209C327100911274 /* FOXThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOXThirdViewController.m; sourceTree = "<group>"; };
+		18EAC132209C327100911274 /* FOXMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOXMainViewController.h; sourceTree = "<group>"; };
+		18EAC133209C327100911274 /* FOXFiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOXFiveViewController.h; sourceTree = "<group>"; };
+		18EAC134209C327100911274 /* FOXFistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOXFistViewController.m; sourceTree = "<group>"; };
+		18EAC135209C327100911274 /* FOXSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOXSecondViewController.h; sourceTree = "<group>"; };
+		18EAC136209C327100911274 /* FOXMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOXMainViewController.m; sourceTree = "<group>"; };
+		18EAC137209C327100911274 /* FOXThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOXThirdViewController.h; sourceTree = "<group>"; };
+		18EAC138209C327100911274 /* FOXFourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOXFourthViewController.m; sourceTree = "<group>"; };
+		18EAC139209C327100911274 /* FOXFiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOXFiveViewController.m; sourceTree = "<group>"; };
+		18EAC13A209C327100911274 /* FOXFistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOXFistViewController.h; sourceTree = "<group>"; };
+		18EAC13B209C327100911274 /* FOXSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOXSecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +205,8 @@
 		18CCA1E720905EA700300966 /* YFToolsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				18E353B720956F720067C967 /* Model.xcdatamodeld */,
+				18EAC12F209C327100911274 /* NavigationModule */,
+				18EAC079209961FA00911274 /* CoreDataTest */,
 				18CCA1E820905EA700300966 /* AppDelegate.h */,
 				18CCA1E920905EA700300966 /* AppDelegate.m */,
 				18CCA1EB20905EA700300966 /* ViewController.h */,
@@ -195,6 +227,7 @@
 		18E352B4209303400067C967 /* YFCommonTools */ = {
 			isa = PBXGroup;
 			children = (
+				18EAC120209C324000911274 /* FOXNavigationBar */,
 				18E3532720930CE20067C967 /* Save */,
 				18E353092093039F0067C967 /* Categories */,
 				18E352EF2093039F0067C967 /* Map */,
@@ -320,6 +353,56 @@
 			path = CategoriesTest;
 			sourceTree = "<group>";
 		};
+		18EAC079209961FA00911274 /* CoreDataTest */ = {
+			isa = PBXGroup;
+			children = (
+				18EAC07A209962EE00911274 /* Model.xcdatamodeld */,
+			);
+			path = CoreDataTest;
+			sourceTree = "<group>";
+		};
+		18EAC120209C324000911274 /* FOXNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				18EAC121209C324000911274 /* FOXNavigationViewController.h */,
+				18EAC122209C324000911274 /* UIViewController+FOXNavigationBar.h */,
+				18EAC123209C324000911274 /* FOXNavigationBar.h */,
+				18EAC127209C324000911274 /* FOXNavigationViewController.m */,
+				18EAC128209C324000911274 /* UIViewController+FOXNavigationBar.m */,
+				18EAC129209C324000911274 /* FOXNavigationBar.m */,
+				18EAC124209C324000911274 /* NavgationSource */,
+			);
+			path = FOXNavigationBar;
+			sourceTree = "<group>";
+		};
+		18EAC124209C324000911274 /* NavgationSource */ = {
+			isa = PBXGroup;
+			children = (
+				18EAC125209C324000911274 /* back_item@3x.png */,
+				18EAC126209C324000911274 /* back_item@2x.png */,
+			);
+			path = NavgationSource;
+			sourceTree = "<group>";
+		};
+		18EAC12F209C327100911274 /* NavigationModule */ = {
+			isa = PBXGroup;
+			children = (
+				18EAC130209C327100911274 /* FOXFourthViewController.h */,
+				18EAC131209C327100911274 /* FOXThirdViewController.m */,
+				18EAC132209C327100911274 /* FOXMainViewController.h */,
+				18EAC133209C327100911274 /* FOXFiveViewController.h */,
+				18EAC134209C327100911274 /* FOXFistViewController.m */,
+				18EAC135209C327100911274 /* FOXSecondViewController.h */,
+				18EAC136209C327100911274 /* FOXMainViewController.m */,
+				18EAC137209C327100911274 /* FOXThirdViewController.h */,
+				18EAC138209C327100911274 /* FOXFourthViewController.m */,
+				18EAC139209C327100911274 /* FOXFiveViewController.m */,
+				18EAC13A209C327100911274 /* FOXFistViewController.h */,
+				18EAC13B209C327100911274 /* FOXSecondViewController.m */,
+			);
+			path = NavigationModule;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -402,6 +485,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				18CCA1F520905EA800300966 /* LaunchScreen.storyboard in Resources */,
+				18EAC12A209C324000911274 /* back_item@3x.png in Resources */,
+				18EAC12B209C324000911274 /* back_item@2x.png in Resources */,
 				18CCA1F220905EA800300966 /* Assets.xcassets in Resources */,
 				18CCA1F020905EA700300966 /* Main.storyboard in Resources */,
 			);
@@ -423,13 +508,18 @@
 			files = (
 				18E35323209303A00067C967 /* UIButton+Extension_YF.m in Sources */,
 				18E35322209303A00067C967 /* NSString+Extension_YF.m in Sources */,
+				18EAC12E209C324000911274 /* FOXNavigationBar.m in Sources */,
+				18EAC13D209C327100911274 /* FOXFistViewController.m in Sources */,
 				18E353B620956CA80067C967 /* YFStudent.m in Sources */,
-				18E353B920956F720067C967 /* Model.xcdatamodeld in Sources */,
+				18EAC13E209C327100911274 /* FOXMainViewController.m in Sources */,
+				18EAC141209C327100911274 /* FOXSecondViewController.m in Sources */,
+				18EAC07C209962EE00911274 /* Model.xcdatamodeld in Sources */,
 				18E3531A209303A00067C967 /* NSMutableDictionary+Safe.m in Sources */,
 				18E353AD209404E10067C967 /* YFArchiverManager.m in Sources */,
 				18E35319209303A00067C967 /* NSMutableArray+Safe.m in Sources */,
 				18E35316209303A00067C967 /* YFDevice.m in Sources */,
 				18E353AC209404E10067C967 /* NSObject+Archiver.m in Sources */,
+				18EAC13F209C327100911274 /* FOXFourthViewController.m in Sources */,
 				18E3531C209303A00067C967 /* NSDictionary+Safe.m in Sources */,
 				18E35325209303A00067C967 /* UIImage+Extension_YF.m in Sources */,
 				18E35318209303A00067C967 /* YFGlobalTool.m in Sources */,
@@ -437,13 +527,17 @@
 				18E3531D209303A00067C967 /* NSObject+Swizzling.m in Sources */,
 				18CCA1ED20905EA700300966 /* ViewController.m in Sources */,
 				18E35321209303A00067C967 /* UIColor+Extension_YF.m in Sources */,
+				18EAC12C209C324000911274 /* FOXNavigationViewController.m in Sources */,
 				18E3531F209303A00067C967 /* NSObject+ImpChangeTool.m in Sources */,
 				18E3531B209303A00067C967 /* NSMutableString+Safe.m in Sources */,
 				18CCA1F820905EA800300966 /* main.m in Sources */,
+				18EAC140209C327100911274 /* FOXFiveViewController.m in Sources */,
+				18EAC12D209C324000911274 /* UIViewController+FOXNavigationBar.m in Sources */,
 				18E353B02094056E0067C967 /* YFPerson.m in Sources */,
 				18E35317209303A00067C967 /* YFLocationConverter.m in Sources */,
 				18E3532A20930CE30067C967 /* YFSaveTool.m in Sources */,
 				18E3532D20930D180067C967 /* YFArcherCoder.m in Sources */,
+				18EAC13C209C327100911274 /* FOXThirdViewController.m in Sources */,
 				18E3533020930D330067C967 /* YFArcherModel.m in Sources */,
 				18E35326209303A00067C967 /* YFAppVersionUpdate.m in Sources */,
 				18CCA1EA20905EA700300966 /* AppDelegate.m in Sources */,
@@ -719,12 +813,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		18E353B720956F720067C967 /* Model.xcdatamodeld */ = {
+		18EAC07A209962EE00911274 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				18E353B820956F720067C967 /* Model.xcdatamodel */,
+				18EAC07B209962EE00911274 /* Model.xcdatamodel */,
 			);
-			currentVersion = 18E353B820956F720067C967 /* Model.xcdatamodel */;
+			currentVersion = 18EAC07B209962EE00911274 /* Model.xcdatamodel */;
 			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
