@@ -11,5 +11,7 @@
 @interface CollectionViewCell : UICollectionViewCell
 @property (nonatomic, strong) UILabel  * titleLabel;
 
+@property (nonatomic, assign) BOOL isSelected;
 
+@property (nonatomic, assign) NSIndexPath *indexPath;
 @end

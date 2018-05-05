@@ -13,8 +13,6 @@
 #import "UICollectionViewLeftAlignedLayout.h"
 
 
-static NSString * const kCellIdentifier           = @"CellIdentifier";
-static NSString * const kHeaderViewCellIdentifier = @"HeaderViewCellIdentifier";
 
 @interface YFSelectedTagViewController ()
 @property (nonatomic, strong) YFSelectedTagView *collectionView;
@@ -27,7 +25,7 @@ static NSString * const kHeaderViewCellIdentifier = @"HeaderViewCellIdentifier";
     self.view.backgroundColor = [UIColor whiteColor];
     
     UICollectionViewLeftAlignedLayout * layout = [[UICollectionViewLeftAlignedLayout alloc] init];
-    CGRect collectionViewFrame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-40);
+    CGRect collectionViewFrame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     self.collectionView = [[YFSelectedTagView alloc] initWithFrame:collectionViewFrame collectionViewLayout:layout];
     [self.view addSubview:self.collectionView];
     

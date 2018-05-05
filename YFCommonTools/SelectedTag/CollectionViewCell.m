@@ -7,7 +7,7 @@
 //
 
 #import "CollectionViewCell.h"
-
+#import "UIColor+Extension_YF.h"
 @implementation CollectionViewCell
 - (id)initWithFrame:(CGRect)frame
 {
@@ -40,9 +40,21 @@
     self.titleLabel.backgroundColor = [UIColor whiteColor];
     self.titleLabel.layer.borderWidth = 1;
     self.titleLabel.layer.masksToBounds = YES;
-    
+    self.isSelected = NO;
     [self.contentView addSubview:self.titleLabel];
 }
 
-
+- (void)setIsSelected:(BOOL)isSelected {
+    _isSelected = isSelected;
+    if (_isSelected) {
+        UIColor *redColor = [UIColor colorWithHexString:@"ff3400"];
+        self.titleLabel.textColor = redColor;
+        self.titleLabel.layer.borderColor = redColor.CGColor;
+        
+    }else {
+        UIColor *grayColor = [UIColor lightGrayColor];
+        self.titleLabel.textColor = grayColor;
+        self.titleLabel.layer.borderColor = grayColor.CGColor;
+    }
+}
 @end

@@ -50,13 +50,17 @@ static NSString * const kHeaderViewCellIdentifier = @"HeaderViewCellIdentifier";
 
 - (void)makeView {
     
-    self.dataSourceArr = [NSMutableArray array];
-    NSMutableArray * array1 = [@[@"推荐",@"热点",@"汽车",@"财经频道",@"热点",@"社会",@"明星八卦",@"IT科技",@"移动互联网",@"金融",@"大数据",@"股票期货",@"食品安全新闻",@"自定义标签"]mutableCopy];
+    { // 测试
+        //*
+        NSMutableArray * array1 = [@[@"推荐",@"热点",@"汽车",@"财经频道",@"热点",@"社会",@"明星八卦",@"IT科技",@"移动互联网",@"金融",@"大数据",@"股票期货",@"食品安全新闻",@"自定义标签"]mutableCopy];
+        [self.dataSourceArr addObject:array1];
+        NSMutableArray * array2 = [@[@"推荐",@"热点",@"汽车",@"财经频道",@"热点",@"社会",@"明星八卦",@"IT科技",@"移动互联网",@"金融",@"大数据",@"股票期货",@"食品安全新闻食品食品安全"]mutableCopy];
+        [self.dataSourceArr addObject:array2];
+        
+        self.titleArr = @[@"订阅", @"为订阅"];
+         //*/
+    }
     
-    [self.dataSourceArr addObject:array1];
-    NSMutableArray * array2 = [@[@"推荐",@"热点",@"汽车",@"财经频道",@"热点",@"社会",@"明星八卦",@"IT科技",@"移动互联网",@"金融",@"大数据",@"股票期货",@"食品安全新闻食品食品安全"]mutableCopy];
-    
-    [self.dataSourceArr addObject:array2];
     
     self.backgroundColor = [UIColor whiteColor];
     [self registerClass:[CollectionViewCell class] forCellWithReuseIdentifier:kCellIdentifier];
@@ -96,13 +100,24 @@ static NSString * const kHeaderViewCellIdentifier = @"HeaderViewCellIdentifier";
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    // 将同一组的cell, 置灰
+    CollectionViewCell *removeCell = nil;
+    for (CollectionViewCell *cell in self.selectedArr) {
+        if (cell.indexPath.section == indexPath.section) {
+            cell.isSelected = NO;
+            removeCell = cell;
+            break;
+        }
+    }
+    [self.selectedArr removeObject:removeCell];
     
-//    NSMutableArray * array1 = indexPath.section == 0?self.dataSourceArr[1]:self.dataSourceArr[0];
-//    NSMutableArray * array2 = indexPath.section == 1?self.dataSourceArr[1]:self.dataSourceArr[0];
-//    [array1 addObject:array2[indexPath.row]];
-//    [array2 removeObjectAtIndex:indexPath.row];
-//    
-//    [self reloadData];
+    CollectionViewCell *cell = (CollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];;
+    cell.isSelected = YES;
+    cell.indexPath = indexPath;
+    
+    [self.selectedArr addObject:cell];
+    
+//    NSLog(@"count ========= %d", self.selectedArr.count);
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView
@@ -111,8 +126,7 @@ static NSString * const kHeaderViewCellIdentifier = @"HeaderViewCellIdentifier";
 {
     if ([kind isEqual:UICollectionElementKindSectionHeader]) {
         CollectionHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:kHeaderViewCellIdentifier forIndexPath:indexPath];
-        NSString * str = indexPath.section == 0 ? @"我的订阅":@"未订阅";
-        headerView.titleLabel.text = str;
+        headerView.titleLabel.text = self.titleArr[indexPath.section];
         return (UICollectionReusableView *)headerView;
     }
     return nil;
@@ -169,6 +183,27 @@ static NSString * const kHeaderViewCellIdentifier = @"HeaderViewCellIdentifier";
 {
     //四周边距
     return UIEdgeInsetsMake(kCollectionViewToTopMargin, kCollectionViewToLeftMargin, kCollectionViewToBottomtMargin, kCollectionViewToRightMargin);
+}
+#pragma mark - 懒加载
+- (NSMutableArray *)dataSourceArr {
+    if (!_dataSourceArr) {
+        _dataSourceArr = [NSMutableArray array];
+    }
+    return  _dataSourceArr;
+}
+
+- (NSMutableArray *)selectedArr {
+    if (!_selectedArr) {
+        _selectedArr = [NSMutableArray array];
+    }
+    return  _selectedArr;
+}
+
+- (NSMutableArray *)titleArr {
+    if (!_titleArr) {
+        _titleArr = [NSMutableArray array];
+    }
+    return  _titleArr;
 }
 
 @end
