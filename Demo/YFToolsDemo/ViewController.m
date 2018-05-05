@@ -15,6 +15,7 @@
 #import <CoreData/CoreData.h>
 #import "FOXNavigationViewController.h"
 #import "FOXMainViewController.h"
+#import "YFSelectedTagViewController.h"
 
 @interface ViewController ()
 
@@ -26,6 +27,8 @@
     [super viewDidLoad];
     
     [self navigationTest];
+    
+    [self selectedTagTest];
     
 //    [self testSafeObject];
     
@@ -142,6 +145,20 @@
     FOXNavigationViewController *navi = [[FOXNavigationViewController alloc] initWithRootViewController:mainVC];
 //    [self.navigationController pushViewController:navi animated:YES];
     [self presentViewController:navi animated:YES completion:nil];
+}
+
+- (void)selectedTagTest {
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(50, 180, 60, 55)];
+    [btn setTitle:@"标签" forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor redColor];
+    [btn addTarget:self action:@selector(tagClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+
+- (void)tagClick {
+    YFSelectedTagViewController *tagViewVC = [[YFSelectedTagViewController alloc] init];
+    [self presentViewController:tagViewVC animated:YES completion:nil];
 }
 
 @end

@@ -67,10 +67,7 @@
 
 - (void)navBarItemClick:(UIButton *)btn
 {
-    
-    NSString *message = [NSString stringWithFormat:@"点击了第%@个Item",@(btn.tag)];
-    UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"" message:message delegate:self cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
-    [alertView show];
+    NSLog(@"点击了第%@个Item", @(btn.tag));
 }
 
 - (void)didReceiveMemoryWarning {

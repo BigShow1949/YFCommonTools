@@ -18,17 +18,18 @@
 
 
 + (instancetype)updateWithAppId:(NSString *)appId {
-    // 最好判断id的长度是否为10位
-//    if (appId.length == 0) return;
+    // 判断id的长度是否为10位
+    if (appId.length != 10) return nil;
     
     NSString *urlStr = [NSString stringWithFormat:@"http://itunes.apple.com/cn/lookup?id=%@", appId];
+    
 
     NSData *response = [NSURLConnection sendSynchronousRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlStr]] returningResponse:nil error:nil];
 
-//    if (response == nil){
-//        NSLog(@"你没有连接网络哦");
-//        return;
-//    }
+    if (response == nil){
+        NSLog(@"你没有连接网络哦");
+        return nil;
+    }
     
     NSError *error;
     NSDictionary *appInfoDic = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingMutableLeaves error:&error];
@@ -40,7 +41,7 @@
     NSArray *array = appInfoDic[@"results"];
     NSDictionary *dic = array[0];
     NSString *updateVersion = dic[@"version"];
-//    NSLog(@"dic = %@", dic);
+    NSLog(@"版本更新 dic = %@", dic);
     //获取当前设备中应用的版本号
     NSString *currentVersion = [YFGlobalTool appVersion];
 //    if (currentVersion.length == 0) {

@@ -69,7 +69,7 @@ static inline CGFloat randomColorFloat()
     
     NSArray *array = [self rgbArrayWithHexString:hexString];
     
-    return [NSString stringWithFormat:@"RGB:%zd,%zd,%zd", [array[0] integerValue], [array[1] integerValue], [array[2] integerValue]];
+    return [NSString stringWithFormat:@"RGB:%d,%d,%d", [array[0] integerValue], [array[1] integerValue], [array[2] integerValue]];
 }
 
 + (NSString *)colorToHexStringWithRGBRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue {

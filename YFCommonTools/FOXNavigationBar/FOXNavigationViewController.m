@@ -54,8 +54,7 @@
     /** 添加侧滑返回的手势 */
     id target = self.interactivePopGestureRecognizer.delegate;
     SEL internalAction = NSSelectorFromString(@"handleNavigationTransition:");
-    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc]initWithTarget:target
-                                                                                action:internalAction];
+    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc]initWithTarget:target action:internalAction];
     [panGesture setDelegate:self];
     [panGesture setMaximumNumberOfTouches:1];
     [self.view addGestureRecognizer:panGesture];
