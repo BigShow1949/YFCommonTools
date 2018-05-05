@@ -34,10 +34,11 @@ float CYLFilterHeaderViewHeigt = 38;
 }
 
 - (id)sharedInit {
-    self.backgroundColor = [UIColor colorWithRed:188.0/255.0 green:188.0/255.0 blue:188.0/255.0 alpha:1.0];
+    self.backgroundColor = [UIColor whiteColor];
     CGFloat titleX = 10;
     CGFloat titleW = self.bounds.size.width - titleX;
-    self.titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(titleX, 0, titleW, self.bounds.size.height)]; //
+    self.titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(titleX, 0, titleW, self.bounds.size.height)];
+    self.titleLabel.font = [UIFont systemFontOfSize:15];
     self.titleLabel.text = @"我的订阅";
     [self addSubview:self.titleLabel];
     return self;
