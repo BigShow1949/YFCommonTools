@@ -16,6 +16,7 @@
 		189911BF20A138C00085AD8F /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 189911B820A138C00085AD8F /* NSObject+Swizzling.m */; };
 		189911C020A138C00085AD8F /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 189911B920A138C00085AD8F /* NSArray+Safe.m */; };
 		189911C120A138C00085AD8F /* NSObject+ImpChangeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 189911BA20A138C00085AD8F /* NSObject+ImpChangeTool.m */; };
+		189911C520A13D290085AD8F /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189911C420A13D290085AD8F /* CategoryViewController.m */; };
 		18CCA1EA20905EA700300966 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA1E920905EA700300966 /* AppDelegate.m */; };
 		18CCA1ED20905EA700300966 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CCA1EC20905EA700300966 /* ViewController.m */; };
 		18CCA1F020905EA700300966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CCA1EE20905EA700300966 /* Main.storyboard */; };
@@ -93,6 +94,8 @@
 		189911B820A138C00085AD8F /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
 		189911B920A138C00085AD8F /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
 		189911BA20A138C00085AD8F /* NSObject+ImpChangeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ImpChangeTool.m"; sourceTree = "<group>"; };
+		189911C320A13D290085AD8F /* CategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		189911C420A13D290085AD8F /* CategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
 		18CCA1E520905EA700300966 /* YFToolsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YFToolsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CCA1E820905EA700300966 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18CCA1E920905EA700300966 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -224,6 +227,15 @@
 			path = SafeObject;
 			sourceTree = "<group>";
 		};
+		189911C220A13C7E0085AD8F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				189911C320A13D290085AD8F /* CategoryViewController.h */,
+				189911C420A13D290085AD8F /* CategoryViewController.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		18CCA1DC20905EA700300966 = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +259,7 @@
 		18CCA1E720905EA700300966 /* YFToolsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				189911C220A13C7E0085AD8F /* Category */,
 				18EAC217209D602E00911274 /* SelectedTag */,
 				18EAC12F209C327100911274 /* NavigationModule */,
 				18EAC079209961FA00911274 /* CoreDataTest */,
@@ -591,6 +604,7 @@
 				18E3532A20930CE30067C967 /* YFSaveTool.m in Sources */,
 				18E3532D20930D180067C967 /* YFArcherCoder.m in Sources */,
 				18EAC14E209C35F800911274 /* FOXThirdViewController.m in Sources */,
+				189911C520A13D290085AD8F /* CategoryViewController.m in Sources */,
 				18EAC153209C35F800911274 /* FOXFistViewController.m in Sources */,
 				18E3533020930D330067C967 /* YFArcherModel.m in Sources */,
 				18EAC151209C35F800911274 /* FOXMainViewController.m in Sources */,

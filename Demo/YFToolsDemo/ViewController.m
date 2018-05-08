@@ -29,7 +29,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self setupDataArr:@[@[@"标签选项",@"YFSelectedTagViewController"],
-                         @[]]];
+                         @[@"分类",@"CategoryViewController"]]];
 
     
 //    [self navigationTest];
