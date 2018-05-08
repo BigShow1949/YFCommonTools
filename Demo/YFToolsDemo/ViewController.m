@@ -18,7 +18,6 @@
 #import "YFSelectedTagViewController.h"
 
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
@@ -26,9 +25,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self navigationTest];
+    self.title = @"导航栏";
+    self.view.backgroundColor = [UIColor whiteColor];
     
-    [self selectedTagTest];
+    [self setupDataArr:@[@[@"标签选项",@"YFSelectedTagViewController"],
+                         @[]]];
+
+    
+//    [self navigationTest];
+    
+//    [self selectedTagTest];
     
 //    [self testSafeObject];
     
@@ -38,7 +44,7 @@
     
 //    [self testSaveTool];
     
-    [self testCoreData];
+//    [self testCoreData];
 }
 
 - (void)testCoreData {
@@ -160,5 +166,6 @@
     YFSelectedTagViewController *tagViewVC = [[YFSelectedTagViewController alloc] init];
     [self presentViewController:tagViewVC animated:YES completion:nil];
 }
+
 
 @end

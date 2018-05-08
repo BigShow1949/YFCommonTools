@@ -20,7 +20,6 @@ float CYLFilterHeaderViewHeigt = 38;
 {
     self = [super initWithFrame:frame];
     if (self) {
-        NSLog(@"width = %f, height = %f", frame.size.width, frame.size.height);
         self = [self sharedInit];
     }
     return self;

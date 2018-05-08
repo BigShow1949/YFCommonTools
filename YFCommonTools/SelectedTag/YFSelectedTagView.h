@@ -11,5 +11,9 @@
 @interface YFSelectedTagView : UICollectionView
 @property (nonatomic, strong) NSMutableArray *dataSourceArr;
 @property (nonatomic, strong) NSMutableArray *titleArr;
+
 @property (nonatomic, strong) NSMutableArray *selectedArr;
+
+@property (nonatomic, copy) void (^didSelectedBlock)(NSMutableArray *selectedArr);
+
 @end

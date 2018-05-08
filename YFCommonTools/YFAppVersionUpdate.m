@@ -33,7 +33,7 @@
     
     NSError *error;
     NSDictionary *appInfoDic = [NSJSONSerialization JSONObjectWithData:response options:NSJSONReadingMutableLeaves error:&error];
-//    NSLog(@"appInfoDic = %@", appInfoDic);
+    NSLog(@"appInfoDic = %@", appInfoDic);
 //    if (error){
 ////        NSLog(@"hsUpdateAppError:%@",error);
 //        return;
@@ -41,7 +41,7 @@
     NSArray *array = appInfoDic[@"results"];
     NSDictionary *dic = array[0];
     NSString *updateVersion = dic[@"version"];
-    NSLog(@"版本更新 dic = %@", dic);
+//    NSLog(@"版本更新 dic = %@", dic);
     //获取当前设备中应用的版本号
     NSString *currentVersion = [YFGlobalTool appVersion];
 //    if (currentVersion.length == 0) {
@@ -56,7 +56,7 @@
     update.title = @"更新提示";
     update.message = [NSString stringWithFormat:@"《%@》有新版本啦!",update.appName];
     update.releaseNotes = dic[@"releaseNotes"];
-    
+    NSLog(@"currentVersion = %@, updaVersion = %@", update.currentVersion, update.updateVersion);
     // 判断商店是否有更新版本
     if ([update.updateVersion compare:update.currentVersion options:NSNumericSearch] == NSOrderedDescending) {
         update.isUpdate = YES;

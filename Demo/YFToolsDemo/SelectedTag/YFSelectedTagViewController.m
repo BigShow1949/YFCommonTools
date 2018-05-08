@@ -24,11 +24,24 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
+
+
+    
     UICollectionViewLeftAlignedLayout * layout = [[UICollectionViewLeftAlignedLayout alloc] init];
     CGRect collectionViewFrame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     self.collectionView = [[YFSelectedTagView alloc] initWithFrame:collectionViewFrame collectionViewLayout:layout];
     [self.view addSubview:self.collectionView];
     
+    { // 测试
+        //*
+        NSMutableArray * array1 = [@[@"推荐",@"热点",@"汽车",@"财经频道",@"热点",@"社会",@"明星八卦",@"IT科技",@"移动互联网",@"金融",@"大数据",@"股票期货",@"食品安全新闻",@"自定义标签"]mutableCopy];
+        [self.collectionView.dataSourceArr addObject:array1];
+        NSMutableArray * array2 = [@[@"推荐",@"热点",@"汽车",@"财经频道",@"热点",@"社会",@"明星八卦",@"IT科技",@"移动互联网",@"金融",@"大数据",@"股票期货",@"食品安全新闻食品食品安全"]mutableCopy];
+        [self.collectionView.dataSourceArr addObject:array2];
+        
+        self.collectionView.titleArr = @[@"订阅", @"为订阅"];
+        //*/
+    }
     
 }
 

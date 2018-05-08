@@ -50,18 +50,6 @@ static NSString * const kHeaderViewCellIdentifier = @"HeaderViewCellIdentifier";
 
 - (void)makeView {
     
-    { // 测试
-        //*
-        NSMutableArray * array1 = [@[@"推荐",@"热点",@"汽车",@"财经频道",@"热点",@"社会",@"明星八卦",@"IT科技",@"移动互联网",@"金融",@"大数据",@"股票期货",@"食品安全新闻",@"自定义标签"]mutableCopy];
-        [self.dataSourceArr addObject:array1];
-        NSMutableArray * array2 = [@[@"推荐",@"热点",@"汽车",@"财经频道",@"热点",@"社会",@"明星八卦",@"IT科技",@"移动互联网",@"金融",@"大数据",@"股票期货",@"食品安全新闻食品食品安全"]mutableCopy];
-        [self.dataSourceArr addObject:array2];
-        
-        self.titleArr = @[@"订阅", @"为订阅"];
-         //*/
-    }
-    
-    
     self.backgroundColor = [UIColor whiteColor];
     [self registerClass:[CollectionViewCell class] forCellWithReuseIdentifier:kCellIdentifier];
     
@@ -116,6 +104,14 @@ static NSString * const kHeaderViewCellIdentifier = @"HeaderViewCellIdentifier";
     cell.indexPath = indexPath;
     
     [self.selectedArr addObject:cell];
+    
+    if (self.didSelectedBlock) {
+        NSMutableArray *tempArr = [NSMutableArray array];
+        for (CollectionViewCell *cell in self.selectedArr) {
+            [tempArr addObject:cell.titleLabel.text];
+        }
+        self.didSelectedBlock(tempArr);
+    }
     
 //    NSLog(@"count ========= %d", self.selectedArr.count);
 }
