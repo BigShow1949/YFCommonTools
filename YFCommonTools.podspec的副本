@@ -14,9 +14,4 @@ s.source_files = 'YFCommonTools/**/*.{h,m}'
 s.public_header_files = 'YFCommonTools/**/*.{h}'
 s.frameworks   = "CoreGraphics", "QuartzCore", "UIKit", "CoreLocation", "Foundation"
 s.requires_arc = true
-
-
-s.subspec 'Categories' do |category|
-    category.source_files = 'YFCommonTools/Categories/**/*.{h,m}'
-    category.public_header_files = 'YFCommonTools/Categories/**/*.{h}'
 end

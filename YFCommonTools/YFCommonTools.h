@@ -17,10 +17,6 @@
 #import "YFSaveTool.h"
 
 // 分类工具
-#import "NSString+Extension_YF.h"
-#import "UIButton+Extension_YF.h"
-#import "UIImage+Extension_YF.h"
-#import "UIColor+Extension_YF.h"
-#import "UITextField+Extension_YF.h"
+#import "YFCategoryHeader.h"
 
 #endif /* YFCommonTools_h */

@@ -19,9 +19,6 @@
 
 @interface UIColor (Extension_YF)
 
-// 可以在项目中的全局文件里写这些
-//#define YFColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
-
 #pragma mark - 生成颜色
 /**
  *  从十六进制字符串获取颜色
