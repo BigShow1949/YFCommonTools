@@ -20,3 +20,5 @@ s.subspec 'Categories' do |category|
     category.source_files = 'YFCommonTools/Categories/**/*.{h,m}'
     category.public_header_files = 'YFCommonTools/Categories/**/*.{h}'
 end
+
+end
