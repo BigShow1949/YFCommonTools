@@ -63,6 +63,8 @@
 		18EAC222209D61C900911274 /* CollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC21F209D61C900911274 /* CollectionHeaderView.m */; };
 		18EAC223209D61C900911274 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC221209D61C900911274 /* CollectionViewCell.m */; };
 		18EAC226209D620600911274 /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC224209D620600911274 /* UICollectionViewLeftAlignedLayout.m */; };
+		F8C95E3621E4E43000C5B9D9 /* NSData+Extension_YF.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C95E3521E4E43000C5B9D9 /* NSData+Extension_YF.m */; };
+		F8C95E3921E4E4B700C5B9D9 /* NSDate+Extension_YF.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C95E3821E4E4B700C5B9D9 /* NSDate+Extension_YF.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,6 +188,10 @@
 		18EAC224209D620600911274 /* UICollectionViewLeftAlignedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLeftAlignedLayout.m; sourceTree = "<group>"; };
 		18EAC225209D620600911274 /* UICollectionViewLeftAlignedLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewLeftAlignedLayout.h; sourceTree = "<group>"; };
 		F8511EA721E1C1FF00E79416 /* YFCategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFCategoryHeader.h; sourceTree = "<group>"; };
+		F8C95E3421E4E43000C5B9D9 /* NSData+Extension_YF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Extension_YF.h"; sourceTree = "<group>"; };
+		F8C95E3521E4E43000C5B9D9 /* NSData+Extension_YF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Extension_YF.m"; sourceTree = "<group>"; };
+		F8C95E3721E4E4B700C5B9D9 /* NSDate+Extension_YF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension_YF.h"; sourceTree = "<group>"; };
+		F8C95E3821E4E4B700C5B9D9 /* NSDate+Extension_YF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension_YF.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,6 +336,10 @@
 				18E353132093039F0067C967 /* UIImage+Extension_YF.m */,
 				18E3537420931F6B0067C967 /* NSObject+Extension_YF.h */,
 				18E3537520931F6B0067C967 /* NSObject+Extension_YF.m */,
+				F8C95E3421E4E43000C5B9D9 /* NSData+Extension_YF.h */,
+				F8C95E3521E4E43000C5B9D9 /* NSData+Extension_YF.m */,
+				F8C95E3721E4E4B700C5B9D9 /* NSDate+Extension_YF.h */,
+				F8C95E3821E4E4B700C5B9D9 /* NSDate+Extension_YF.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -570,6 +580,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C95E3621E4E43000C5B9D9 /* NSData+Extension_YF.m in Sources */,
 				18E35323209303A00067C967 /* UIButton+Extension_YF.m in Sources */,
 				189911BF20A138C00085AD8F /* NSObject+Swizzling.m in Sources */,
 				18E35322209303A00067C967 /* NSString+Extension_YF.m in Sources */,
@@ -614,6 +625,7 @@
 				18CCA1EA20905EA700300966 /* AppDelegate.m in Sources */,
 				189911A820A1350E0085AD8F /* BaseTableViewController.m in Sources */,
 				18E35324209303A00067C967 /* UITextField+Extension_YF.m in Sources */,
+				F8C95E3921E4E4B700C5B9D9 /* NSDate+Extension_YF.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
