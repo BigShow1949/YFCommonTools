@@ -7,7 +7,7 @@
 //  https://github.com/andreamazz/UIView-Shake
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-typedef NS_ENUM(NSInteger, ShakeDirection) {
+typedef NS_ENUM(NSInteger, ShakeDirection_View) {
     ShakeDirectionHorizontal = 0,
     ShakeDirectionVertical
 };
@@ -42,7 +42,7 @@ typedef NS_ENUM(NSInteger, ShakeDirection) {
  * @param delta The width of the shake
  * @param handler A block object to be executed when the shake sequence ends
  */
-- (void)shake:(int)times withDelta:(CGFloat)delta completion:(void((^)()))handler;
+- (void)shake:(int)times withDelta:(CGFloat)delta completion:(void((^)(void)))handler;
 
 /** Shake the UIView at a custom speed
  *
@@ -63,7 +63,7 @@ typedef NS_ENUM(NSInteger, ShakeDirection) {
  * @param interval The duration of one shake
  * @param handler A block object to be executed when the shake sequence ends
  */
-- (void)shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval completion:(void((^)()))handler;
+- (void)shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval completion:(void((^)(void)))handler;
 
 /** Shake the UIView at a custom speed
  *
@@ -74,7 +74,7 @@ typedef NS_ENUM(NSInteger, ShakeDirection) {
  * @param interval The duration of one shake
  * @param direction of the shake
  */
-- (void)shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(ShakeDirection)shakeDirection;
+- (void)shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(ShakeDirection_View)shakeDirection;
 
 /** Shake the UIView at a custom speed
  *
@@ -83,9 +83,9 @@ typedef NS_ENUM(NSInteger, ShakeDirection) {
  * @param times The number of shakes
  * @param delta The width of the shake
  * @param interval The duration of one shake
- * @param direction of the shake
+ * @param shakeDirection of the shake
  * @param completion to be called when the view is done shaking
  */
-- (void)shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(ShakeDirection)shakeDirection completion:(void(^)(void))completion;
+- (void)shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(ShakeDirection_View)shakeDirection completion:(void(^)(void))completion;
 
 @end
