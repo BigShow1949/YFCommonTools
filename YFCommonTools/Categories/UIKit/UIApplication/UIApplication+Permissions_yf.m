@@ -18,8 +18,8 @@
 @import CoreMotion;
 @import EventKit;
 
-typedef void (^LocationSuccessCallback)();
-typedef void (^LocationFailureCallback)();
+typedef void (^LocationSuccessCallback)(void);
+typedef void (^LocationFailureCallback)(void);
 
 static char PermissionsLocationManagerPropertyKey;
 static char PermissionsLocationBlockSuccessPropertyKey;

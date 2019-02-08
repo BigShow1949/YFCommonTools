@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-typedef void (^BarButtonActionBlock)();
+typedef void (^BarButtonActionBlock)(void);
 
 @interface UIBarButtonItem (Action_yf)
 
