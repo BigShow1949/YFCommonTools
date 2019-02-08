@@ -6,8 +6,7 @@
 //  Copyright © 2018年 BigShow. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
-@interface CategoryViewController : UIViewController
+#import "BaseTableViewController.h"
+@interface CategoryViewController : BaseTableViewController
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "NSString+Extension_YF.h"
+#import "NSString+Extension_yf.h"
 
 @interface NSStringTest : XCTestCase
 
