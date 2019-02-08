@@ -8,8 +8,8 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 typedef NS_ENUM(NSInteger, ShakeDirection_View) {
-    ShakeDirectionHorizontal = 0,
-    ShakeDirectionVertical
+    ShakeDirectionHorizontal_View = 0,
+    ShakeDirectionVertical_View
 };
 
 @interface UIView (Shake_yf)
@@ -72,7 +72,7 @@ typedef NS_ENUM(NSInteger, ShakeDirection_View) {
  * @param times The number of shakes
  * @param delta The width of the shake
  * @param interval The duration of one shake
- * @param direction of the shake
+ * @param shakeDirection of the shake
  */
 - (void)shake:(int)times withDelta:(CGFloat)delta speed:(NSTimeInterval)interval shakeDirection:(ShakeDirection_View)shakeDirection;
 
