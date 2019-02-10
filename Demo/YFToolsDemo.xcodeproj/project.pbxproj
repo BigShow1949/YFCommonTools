@@ -132,7 +132,6 @@
 		F86F15BC220D31E100970FAD /* UIView+BlockGesture_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F140B220D31DE00970FAD /* UIView+BlockGesture_yf.m */; };
 		F86F15BD220D31E100970FAD /* UIView+Animation_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F140E220D31DE00970FAD /* UIView+Animation_yf.m */; };
 		F86F15BE220D31E100970FAD /* UIView+FDCollapsibleConstraints_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1410220D31DE00970FAD /* UIView+FDCollapsibleConstraints_yf.m */; };
-		F86F15BF220D31E100970FAD /* UIView+Shake_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1411220D31DE00970FAD /* UIView+Shake_yf.m */; };
 		F86F15C0220D31E100970FAD /* UIView+Recursion_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1414220D31DE00970FAD /* UIView+Recursion_yf.m */; };
 		F86F15C1220D31E100970FAD /* UIView+draggable_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1416220D31DE00970FAD /* UIView+draggable_yf.m */; };
 		F86F15C2220D31E100970FAD /* UIView+Visuals_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F141A220D31DE00970FAD /* UIView+Visuals_yf.m */; };
@@ -536,7 +535,6 @@
 		F86F13FE220D31DE00970FAD /* UISplitViewController+QuickAccess_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISplitViewController+QuickAccess_yf.m"; sourceTree = "<group>"; };
 		F86F1400220D31DE00970FAD /* UIView+Debug_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Debug_yf.m"; sourceTree = "<group>"; };
 		F86F1401220D31DE00970FAD /* UIView+Nib_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Nib_yf.m"; sourceTree = "<group>"; };
-		F86F1402220D31DE00970FAD /* UIView+Shake_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shake_yf.h"; sourceTree = "<group>"; };
 		F86F1403220D31DE00970FAD /* UIView+CustomBorder_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomBorder_yf.m"; sourceTree = "<group>"; };
 		F86F1404220D31DE00970FAD /* UIView+GestureCallback_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GestureCallback_yf.m"; sourceTree = "<group>"; };
 		F86F1405220D31DE00970FAD /* UIView+draggable_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+draggable_yf.h"; sourceTree = "<group>"; };
@@ -551,7 +549,6 @@
 		F86F140E220D31DE00970FAD /* UIView+Animation_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation_yf.m"; sourceTree = "<group>"; };
 		F86F140F220D31DE00970FAD /* UIView+Constraints_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraints_yf.h"; sourceTree = "<group>"; };
 		F86F1410220D31DE00970FAD /* UIView+FDCollapsibleConstraints_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FDCollapsibleConstraints_yf.m"; sourceTree = "<group>"; };
-		F86F1411220D31DE00970FAD /* UIView+Shake_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shake_yf.m"; sourceTree = "<group>"; };
 		F86F1412220D31DE00970FAD /* UIView+Debug_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Debug_yf.h"; sourceTree = "<group>"; };
 		F86F1413220D31DE00970FAD /* UIView+Nib_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Nib_yf.h"; sourceTree = "<group>"; };
 		F86F1414220D31DE00970FAD /* UIView+Recursion_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Recursion_yf.m"; sourceTree = "<group>"; };
@@ -1227,7 +1224,6 @@
 		F86F137E220D31DE00970FAD /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
-				F86F166D220D70A500970FAD /* UIImageCategoryHeader.h */,
 				F86F138A220D31DE00970FAD /* UIImage+Alpha_yf.h */,
 				F86F139A220D31DE00970FAD /* UIImage+Alpha_yf.m */,
 				F86F1389220D31DE00970FAD /* UIImage+animatedGIF_yf.h */,
@@ -1260,6 +1256,7 @@
 				F86F139C220D31DE00970FAD /* UIImage+RoundedCorner_yf.m */,
 				F86F1380220D31DE00970FAD /* UIImage+Vector_yf.h */,
 				F86F1390220D31DE00970FAD /* UIImage+Vector_yf.m */,
+				F86F166D220D70A500970FAD /* UIImageCategoryHeader.h */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -1461,8 +1458,6 @@
 				F86F1414220D31DE00970FAD /* UIView+Recursion_yf.m */,
 				F86F140D220D31DE00970FAD /* UIView+Screenshot_yf.h */,
 				F86F1420220D31DE00970FAD /* UIView+Screenshot_yf.m */,
-				F86F1402220D31DE00970FAD /* UIView+Shake_yf.h */,
-				F86F1411220D31DE00970FAD /* UIView+Shake_yf.m */,
 				F86F140C220D31DE00970FAD /* UIView+Toast_yf.h */,
 				F86F1421220D31DE00970FAD /* UIView+Toast_yf.m */,
 				F86F1415220D31DE00970FAD /* UIView+ViewController_yf.h */,
@@ -2418,7 +2413,6 @@
 				F86F1584220D31E100970FAD /* UIImage+Merge_yf.m in Sources */,
 				18E35318209303A00067C967 /* YFGlobalTool.m in Sources */,
 				F86F157C220D31E100970FAD /* UIImage+Blur_yf.m in Sources */,
-				F86F15BF220D31E100970FAD /* UIView+Shake_yf.m in Sources */,
 				F86F1597220D31E100970FAD /* UIApplication+NetworkActivityIndicator_yf.m in Sources */,
 				F86F1620220D31E100970FAD /* NSString+Ruby_yf.m in Sources */,
 				F86F15DB220D31E100970FAD /* UIImageView+FaceAwareFill_yf.m in Sources */,
