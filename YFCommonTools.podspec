@@ -21,9 +21,10 @@ s.subspec 'Categories' do |category|
     category.public_header_files = 'YFCommonTools/Categories/**/*.{h}'
 end
 
-s.subspec 'YFNavigationBar' do |YFNavigationBar|
-category.source_files = 'YFCommonTools/YFNavigationBar/**/*.{h,m}'
-category.public_header_files = 'YFCommonTools/YFNavigationBar/**/*.{h}'
+s.subspec 'YFNavigationBar' do |navigationBar|
+    navigationBar.source_files = 'YFCommonTools/YFNavigationBar/**/*.{h,m}'
+    navigationBar.public_header_files = 'YFCommonTools/YFNavigationBar/**/*.{h}'
+    navigationBar.resource = 'YFCommonTools/YFNavigationBar/YFNavigationBar.bundle'
 end
 
 end
