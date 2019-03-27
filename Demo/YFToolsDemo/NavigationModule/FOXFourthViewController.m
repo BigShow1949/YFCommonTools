@@ -1,13 +1,13 @@
 //
 //  FOXFourthViewController.m
-//  FOXNavigationBar
+//  YFNavigationBar_yf
 //
 //  Created by 徐惠雨 on 16/1/23.
 //  Copyright © 2016年 XFoxer. All rights reserved.
 //
 
 #import "FOXFourthViewController.h"
-#import "UIViewController+FOXNavigationBar.h"
+#import "UIViewController+YFNavigationBar_yf.h"
 
 @implementation FOXFourthViewController
 

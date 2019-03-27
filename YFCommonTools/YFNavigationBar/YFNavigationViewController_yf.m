@@ -1,24 +1,24 @@
 //
-//  FOXNavigationViewController.m
-//  FOXNavigationBar
+//  YFNavigationViewController_yf.m
+//  YFNavigationBar_yf
 //
 //  Created by XFoxer on 16/1/20.
 //  Copyright © 2016年 XFoxer. All rights reserved.
 //
 
-#import "FOXNavigationViewController.h"
-#import "UIViewController+FOXNavigationBar.h"
+#import "YFNavigationViewController_yf.h"
+#import "UIViewController+YFNavigationBar_yf.h"
 
 
 
-@interface FOXNavigationViewController ()<UIGestureRecognizerDelegate>
+@interface YFNavigationViewController_yf ()<UIGestureRecognizerDelegate>
 
 /** 是否允许侧滑返回 */
 @property (nonatomic, assign) BOOL fullScreenPopGestureEnabled;
 
 @end
 
-@implementation FOXNavigationViewController
+@implementation YFNavigationViewController_yf
 
 
 - (instancetype)initWithRootViewController:(UIViewController *)rootViewController
@@ -83,7 +83,7 @@
 {
     /** 添加导航Bar */
     __weak __typeof(self) weakSelf = self;
-    FOXNavigationBar *foxLazyBar = [[FOXNavigationBar alloc]init];
+    YFNavigationBar_yf *foxLazyBar = [[YFNavigationBar_yf alloc]init];
     [foxLazyBar setBackItemClickBlock:^{
         [weakSelf didClickBackItem];
     }];

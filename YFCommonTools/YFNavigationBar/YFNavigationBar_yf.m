@@ -1,12 +1,12 @@
 //
-//  FOXNavigationBar.m
-//  FOXNavigationBar
+//  YFNavigationBar_yf.m
+//  YFNavigationBar_yf
 //
 //  Created by XFoxer on 16/1/20.
 //  Copyright © 2016年 XFoxer. All rights reserved.
 //
 
-#import "FOXNavigationBar.h"
+#import "YFNavigationBar_yf.h"
 
 /** 状态栏高度 */
 #define kStatusBarHeight 20.0f
@@ -20,7 +20,7 @@
 
 
 
-@interface FOXNavigationBar()
+@interface YFNavigationBar_yf()
 
 
 /** 标题Label */
@@ -40,7 +40,7 @@
 
 
 
-@implementation FOXNavigationBar
+@implementation YFNavigationBar_yf
 
 - (void)dealloc
 {
@@ -164,8 +164,8 @@
 {
     UIButton *backItem = [UIButton buttonWithType:UIButtonTypeCustom];
     [backItem setFrame:[[self class] leftItemFrame]];
-    [backItem setImage:[UIImage imageNamed:@"back_item"] forState:UIControlStateNormal];
-    [backItem setImage:[UIImage imageNamed:@"back_item"] forState:UIControlStateHighlighted];
+    [backItem setImage:[UIImage imageNamed:@"YFNavigationBar/back_item"] forState:UIControlStateNormal];
+    [backItem setImage:[UIImage imageNamed:@"YFNavigationBar/back_item"] forState:UIControlStateHighlighted];
     [backItem addTarget:self action:@selector(popViewController) forControlEvents:UIControlEventTouchUpInside];
     return backItem;
 }

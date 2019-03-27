@@ -1,7 +1,7 @@
 
 //
 //  FOXMainViewController.m
-//  FOXNavigationBar
+//  YFNavigationBar_yf
 //
 //  Created by 徐惠雨 on 16/1/20.
 //  Copyright © 2016年 XFoxer. All rights reserved.
@@ -9,7 +9,7 @@
 
 #import "FOXMainViewController.h"
 
-#import "UIViewController+FOXNavigationBar.h"
+#import "UIViewController+YFNavigationBar_yf.h"
 
 #import "FOXFistViewController.h"
 #import "FOXSecondViewController.h"
@@ -29,11 +29,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"FOXNavigationBar";
+    self.title = @"YFNavigationBar_yf";
     [self hiddenBarLine:YES];
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
     [self.view addSubview:self.tableView = [self createTableView]];
+    
+    [self setupNav];
+}
+
+- (void)setupNav {
+    
 }
 
 

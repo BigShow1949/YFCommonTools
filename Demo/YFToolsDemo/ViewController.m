@@ -13,8 +13,6 @@
 #import "YFStudent.h"
 
 #import <CoreData/CoreData.h>
-#import "FOXNavigationViewController.h"
-#import "FOXMainViewController.h"
 #import "YFSelectedTagViewController.h"
 
 @interface ViewController ()
@@ -29,7 +27,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self setupDataArr:@[@[@"标签选项",@"YFSelectedTagViewController"],
-                         @[@"分类",@"CategoryViewController"]]];
+                         @[@"分类",@"CategoryViewController"],@[@"导航栏",@"YFNavigationViewController"]]];
 
     
 //    [self navigationTest];
@@ -136,22 +134,7 @@
     
 }
 
-- (void)navigationTest {
-    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(50, 100, 60, 55)];
-    [btn setTitle:@"导航栏" forState:UIControlStateNormal];
-    btn.backgroundColor = [UIColor redColor];
-    [btn addTarget:self action:@selector(naviClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
-}
 
-- (void)naviClick {
-    NSLog(@"==========点击导航栏");
-    FOXMainViewController *mainVC = [[FOXMainViewController alloc] init];
-    
-    FOXNavigationViewController *navi = [[FOXNavigationViewController alloc] initWithRootViewController:mainVC];
-//    [self.navigationController pushViewController:navi animated:YES];
-    [self presentViewController:navi animated:YES completion:nil];
-}
 
 - (void)selectedTagTest {
     

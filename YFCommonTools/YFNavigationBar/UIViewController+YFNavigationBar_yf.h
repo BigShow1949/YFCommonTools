@@ -1,22 +1,22 @@
 //
-//  UIViewController+FOXNavigationBar.h
-//  FOXNavigationBar
+//  UIViewController+YFNavigationBar_yf.h
+//  YFNavigationBar_yf
 //
 //  Created by XFoxer on 16/1/21.
 //  Copyright © 2016年 XFoxer. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "FOXNavigationBar.h"
+#import "YFNavigationBar_yf.h"
 
 
-@interface UIViewController (FOXNavigationBar)
+@interface UIViewController (YFNavigationBar_yf)
 
 /*!@brief
  * 导航栏视图 
  * @note 取名navigationBar 会与系统命名冲突
  */
-@property (nonatomic, strong) FOXNavigationBar *customBar;
+@property (nonatomic, strong) YFNavigationBar_yf *customBar;
 
 /** 是否隐藏导航栏视图 */
 @property (nonatomic, getter=isNavigationBarHidden) BOOL navigationBarHidden;

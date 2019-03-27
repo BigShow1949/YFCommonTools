@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "YFCommonTools"
-s.version      = "0.1.0"
+s.version      = "0.1.1"
 s.summary      = "Tools for OC"
 s.description  = <<-DESC
 Tools for OC private.
@@ -19,6 +19,11 @@ s.requires_arc = true
 s.subspec 'Categories' do |category|
     category.source_files = 'YFCommonTools/Categories/**/*.{h,m}'
     category.public_header_files = 'YFCommonTools/Categories/**/*.{h}'
+end
+
+s.subspec 'YFNavigationBar' do |YFNavigationBar|
+category.source_files = 'YFCommonTools/YFNavigationBar/**/*.{h,m}'
+category.public_header_files = 'YFCommonTools/YFNavigationBar/**/*.{h}'
 end
 
 end

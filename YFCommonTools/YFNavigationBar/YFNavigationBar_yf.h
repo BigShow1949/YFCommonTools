@@ -1,6 +1,6 @@
 //
-//  FOXNavigationBar.h
-//  FOXNavigationBar
+//  YFNavigationBar_yf.h
+//  YFNavigationBar_yf
 //
 //  Created by XFoxer on 16/1/20.
 //  Copyright © 2016年 XFoxer. All rights reserved.
@@ -14,7 +14,7 @@
 typedef void(^BackItemClickBlock)(void);
 
 
-@interface FOXNavigationBar : UIView
+@interface YFNavigationBar_yf : UIView
 
 /** 返回按钮回调事件 */
 @property (nonatomic, copy) BackItemClickBlock backItemClickBlock;

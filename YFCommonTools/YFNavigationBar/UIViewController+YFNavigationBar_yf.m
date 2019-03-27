@@ -1,12 +1,12 @@
 //
-//  UIViewController+FOXNavigationBar.m
-//  FOXNavigationBar
+//  UIViewController+YFNavigationBar_yf.m
+//  YFNavigationBar_yf
 //
 //  Created by XFoxer on 16/1/21.
 //  Copyright © 2016年 XFoxer. All rights reserved.
 //
 
-#import "UIViewController+FOXNavigationBar.h"
+#import "UIViewController+YFNavigationBar_yf.h"
 #import <objc/runtime.h>
 
 
@@ -15,7 +15,7 @@
  */
 
 
-@implementation UIViewController (FOXNavigationBar)
+@implementation UIViewController (YFNavigationBar_yf)
 
 @dynamic customBar;
 @dynamic navigationBarHidden;
@@ -25,12 +25,12 @@
 
 #pragma mark - Custom Property
 
-- (FOXNavigationBar *)customBar
+- (YFNavigationBar_yf *)customBar
 {
     return objc_getAssociatedObject(self, _cmd);
 }
 
-- (void)setCustomBar:(FOXNavigationBar *)customBar
+- (void)setCustomBar:(YFNavigationBar_yf *)customBar
 {
     objc_setAssociatedObject(self, @selector(customBar), customBar, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }

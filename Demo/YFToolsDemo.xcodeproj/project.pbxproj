@@ -47,11 +47,9 @@
 		18EAC01120994EA800911274 /* YFFood.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC00B20994EA800911274 /* YFFood.m */; };
 		18EAC01320994EC300911274 /* NSStringTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC01220994EC300911274 /* NSStringTest.m */; };
 		18EAC07C209962EE00911274 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC07A209962EE00911274 /* Model.xcdatamodeld */; };
-		18EAC12A209C324000911274 /* back_item@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EAC125209C324000911274 /* back_item@3x.png */; };
-		18EAC12B209C324000911274 /* back_item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EAC126209C324000911274 /* back_item@2x.png */; };
-		18EAC12C209C324000911274 /* FOXNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC127209C324000911274 /* FOXNavigationViewController.m */; };
-		18EAC12D209C324000911274 /* UIViewController+FOXNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC128209C324000911274 /* UIViewController+FOXNavigationBar.m */; };
-		18EAC12E209C324000911274 /* FOXNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC129209C324000911274 /* FOXNavigationBar.m */; };
+		18EAC12C209C324000911274 /* YFNavigationViewController_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC127209C324000911274 /* YFNavigationViewController_yf.m */; };
+		18EAC12D209C324000911274 /* UIViewController+YFNavigationBar_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC128209C324000911274 /* UIViewController+YFNavigationBar_yf.m */; };
+		18EAC12E209C324000911274 /* YFNavigationBar_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC129209C324000911274 /* YFNavigationBar_yf.m */; };
 		18EAC14E209C35F800911274 /* FOXThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC142209C35F700911274 /* FOXThirdViewController.m */; };
 		18EAC14F209C35F800911274 /* FOXFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC143209C35F700911274 /* FOXFourthViewController.m */; };
 		18EAC150209C35F800911274 /* FOXSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EAC145209C35F700911274 /* FOXSecondViewController.m */; };
@@ -289,6 +287,8 @@
 		F86F1665220D6B7E00970FAD /* UIKitCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1664220D6B7E00970FAD /* UIKitCategoryViewController.m */; };
 		F86F1669220D6D2400970FAD /* FoundationCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1668220D6D2400970FAD /* FoundationCategoryViewController.m */; };
 		F86F166C220D6DDB00970FAD /* NSDateCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F166B220D6DDB00970FAD /* NSDateCategoryViewController.m */; };
+		F8831031224B717F000F19F6 /* YFNavigationBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8831030224B717F000F19F6 /* YFNavigationBar.bundle */; };
+		F8831034224B7383000F19F6 /* YFNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8831033224B7383000F19F6 /* YFNavigationViewController.m */; };
 		F8C95E3621E4E43000C5B9D9 /* NSData+Img_yf.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C95E3521E4E43000C5B9D9 /* NSData+Img_yf.m */; };
 /* End PBXBuildFile section */
 
@@ -382,14 +382,12 @@
 		18EAC00C20994EA800911274 /* YFLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFLocation.h; sourceTree = "<group>"; };
 		18EAC01220994EC300911274 /* NSStringTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSStringTest.m; sourceTree = "<group>"; };
 		18EAC07B209962EE00911274 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		18EAC121209C324000911274 /* FOXNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOXNavigationViewController.h; sourceTree = "<group>"; };
-		18EAC122209C324000911274 /* UIViewController+FOXNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FOXNavigationBar.h"; sourceTree = "<group>"; };
-		18EAC123209C324000911274 /* FOXNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOXNavigationBar.h; sourceTree = "<group>"; };
-		18EAC125209C324000911274 /* back_item@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_item@3x.png"; sourceTree = "<group>"; };
-		18EAC126209C324000911274 /* back_item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back_item@2x.png"; sourceTree = "<group>"; };
-		18EAC127209C324000911274 /* FOXNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOXNavigationViewController.m; sourceTree = "<group>"; };
-		18EAC128209C324000911274 /* UIViewController+FOXNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FOXNavigationBar.m"; sourceTree = "<group>"; };
-		18EAC129209C324000911274 /* FOXNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOXNavigationBar.m; sourceTree = "<group>"; };
+		18EAC121209C324000911274 /* YFNavigationViewController_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNavigationViewController_yf.h; sourceTree = "<group>"; };
+		18EAC122209C324000911274 /* UIViewController+YFNavigationBar_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YFNavigationBar_yf.h"; sourceTree = "<group>"; };
+		18EAC123209C324000911274 /* YFNavigationBar_yf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFNavigationBar_yf.h; sourceTree = "<group>"; };
+		18EAC127209C324000911274 /* YFNavigationViewController_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNavigationViewController_yf.m; sourceTree = "<group>"; };
+		18EAC128209C324000911274 /* UIViewController+YFNavigationBar_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YFNavigationBar_yf.m"; sourceTree = "<group>"; };
+		18EAC129209C324000911274 /* YFNavigationBar_yf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFNavigationBar_yf.m; sourceTree = "<group>"; };
 		18EAC142209C35F700911274 /* FOXThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOXThirdViewController.m; sourceTree = "<group>"; };
 		18EAC143209C35F700911274 /* FOXFourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOXFourthViewController.m; sourceTree = "<group>"; };
 		18EAC144209C35F700911274 /* FOXFiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOXFiveViewController.h; sourceTree = "<group>"; };
@@ -866,6 +864,9 @@
 		F86F166B220D6DDB00970FAD /* NSDateCategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSDateCategoryViewController.m; sourceTree = "<group>"; };
 		F86F166D220D70A500970FAD /* UIImageCategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageCategoryHeader.h; sourceTree = "<group>"; };
 		F86F166E220D716E00970FAD /* UIKitCategoryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIKitCategoryHeader.h; sourceTree = "<group>"; };
+		F8831030224B717F000F19F6 /* YFNavigationBar.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YFNavigationBar.bundle; sourceTree = "<group>"; };
+		F8831032224B7383000F19F6 /* YFNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFNavigationViewController.h; sourceTree = "<group>"; };
+		F8831033224B7383000F19F6 /* YFNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFNavigationViewController.m; sourceTree = "<group>"; };
 		F8C95E3421E4E43000C5B9D9 /* NSData+Img_yf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Img_yf.h"; sourceTree = "<group>"; };
 		F8C95E3521E4E43000C5B9D9 /* NSData+Img_yf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Img_yf.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -972,7 +973,7 @@
 			children = (
 				189911AB20A138C00085AD8F /* SafeObject */,
 				18EAC216209D5FC100911274 /* SelectedTag */,
-				18EAC120209C324000911274 /* FOXNavigationBar */,
+				18EAC120209C324000911274 /* YFNavigationBar */,
 				18E3532720930CE20067C967 /* Save */,
 				18E353092093039F0067C967 /* Categories */,
 				18E352EF2093039F0067C967 /* Map */,
@@ -1091,25 +1092,24 @@
 			path = CoreDataTest;
 			sourceTree = "<group>";
 		};
-		18EAC120209C324000911274 /* FOXNavigationBar */ = {
+		18EAC120209C324000911274 /* YFNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
-				18EAC121209C324000911274 /* FOXNavigationViewController.h */,
-				18EAC127209C324000911274 /* FOXNavigationViewController.m */,
-				18EAC122209C324000911274 /* UIViewController+FOXNavigationBar.h */,
-				18EAC128209C324000911274 /* UIViewController+FOXNavigationBar.m */,
-				18EAC123209C324000911274 /* FOXNavigationBar.h */,
-				18EAC129209C324000911274 /* FOXNavigationBar.m */,
+				F8831030224B717F000F19F6 /* YFNavigationBar.bundle */,
+				18EAC121209C324000911274 /* YFNavigationViewController_yf.h */,
+				18EAC127209C324000911274 /* YFNavigationViewController_yf.m */,
+				18EAC122209C324000911274 /* UIViewController+YFNavigationBar_yf.h */,
+				18EAC128209C324000911274 /* UIViewController+YFNavigationBar_yf.m */,
+				18EAC123209C324000911274 /* YFNavigationBar_yf.h */,
+				18EAC129209C324000911274 /* YFNavigationBar_yf.m */,
 				18EAC124209C324000911274 /* NavgationSource */,
 			);
-			path = FOXNavigationBar;
+			path = YFNavigationBar;
 			sourceTree = "<group>";
 		};
 		18EAC124209C324000911274 /* NavgationSource */ = {
 			isa = PBXGroup;
 			children = (
-				18EAC125209C324000911274 /* back_item@3x.png */,
-				18EAC126209C324000911274 /* back_item@2x.png */,
 			);
 			path = NavgationSource;
 			sourceTree = "<group>";
@@ -1129,6 +1129,8 @@
 				18EAC145209C35F700911274 /* FOXSecondViewController.m */,
 				18EAC14C209C35F800911274 /* FOXThirdViewController.h */,
 				18EAC142209C35F700911274 /* FOXThirdViewController.m */,
+				F8831032224B7383000F19F6 /* YFNavigationViewController.h */,
+				F8831033224B7383000F19F6 /* YFNavigationViewController.m */,
 			);
 			path = NavigationModule;
 			sourceTree = "<group>";
@@ -2270,9 +2272,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				18CCA1F520905EA800300966 /* LaunchScreen.storyboard in Resources */,
-				18EAC12A209C324000911274 /* back_item@3x.png in Resources */,
-				18EAC12B209C324000911274 /* back_item@2x.png in Resources */,
 				F86F164B220D31E100970FAD /* NSDateTimeAgo.bundle in Resources */,
+				F8831031224B717F000F19F6 /* YFNavigationBar.bundle in Resources */,
 				18CCA1F220905EA800300966 /* Assets.xcassets in Resources */,
 				18CCA1F020905EA700300966 /* Main.storyboard in Resources */,
 			);
@@ -2331,7 +2332,7 @@
 				F86F1639220D31E100970FAD /* NSDecimalNumber+CalculatingByString_yf.m in Sources */,
 				F86F1638220D31E100970FAD /* NSDecimalNumber+Extensions_yf.m in Sources */,
 				F86F15C6220D31E100970FAD /* UIView+Toast_yf.m in Sources */,
-				18EAC12E209C324000911274 /* FOXNavigationBar.m in Sources */,
+				18EAC12E209C324000911274 /* YFNavigationBar_yf.m in Sources */,
 				F86F15FC220D31E100970FAD /* NSManagedObjectContext+FetchRequestsConstructors_yf.m in Sources */,
 				F86F15F7220D31E100970FAD /* UITextField+Blocks_yf.m in Sources */,
 				189911C120A138C00085AD8F /* NSObject+ImpChangeTool.m in Sources */,
@@ -2441,7 +2442,7 @@
 				F86F15A4220D31E100970FAD /* UIButton+TouchAreaInsets_yf.m in Sources */,
 				F86F15F3220D31E100970FAD /* UIControl+Block_yf.m in Sources */,
 				18E35321209303A00067C967 /* UIColor+Extension_yf.m in Sources */,
-				18EAC12C209C324000911274 /* FOXNavigationViewController.m in Sources */,
+				18EAC12C209C324000911274 /* YFNavigationViewController_yf.m in Sources */,
 				F86F15FB220D31E100970FAD /* NSManagedObject+Extensions_yf.m in Sources */,
 				F86F1601220D31E100970FAD /* NSPersistentStoreCoordinator+Custom_yf.m in Sources */,
 				F86F15E9220D31E100970FAD /* UINavigationController+JZExtension_yf.m in Sources */,
@@ -2466,7 +2467,7 @@
 				189911BC20A138C00085AD8F /* NSMutableDictionary+Safe.m in Sources */,
 				18CCA1F820905EA800300966 /* main.m in Sources */,
 				F86F1619220D31E100970FAD /* NSURL+Param_yf.m in Sources */,
-				18EAC12D209C324000911274 /* UIViewController+FOXNavigationBar.m in Sources */,
+				18EAC12D209C324000911274 /* UIViewController+YFNavigationBar_yf.m in Sources */,
 				F86F164C220D31E100970FAD /* NSDate+Formatter_yf.m in Sources */,
 				F86F15EE220D31E100970FAD /* UITableView+FDKeyedHeightCache_yf.m in Sources */,
 				F86F15CE220D31E100970FAD /* UITextView+PinchZoom_yf.m in Sources */,
@@ -2487,6 +2488,7 @@
 				F86F1654220D31E100970FAD /* CAAnimation+Blocks_yf.m in Sources */,
 				F86F15CB220D31E100970FAD /* UINavigationItem+Loading_yf.m in Sources */,
 				F86F164E220D31E100970FAD /* NSDate+Reporting_yf.m in Sources */,
+				F8831034224B7383000F19F6 /* YFNavigationViewController.m in Sources */,
 				F86F1612220D31E100970FAD /* NSFileHandle+readLine_yf.m in Sources */,
 				F86F15E1220D31E100970FAD /* UIViewController+BackButtonTouched_yf.m in Sources */,
 				F86F1614220D31E100970FAD /* NSData+zlib_yf.m in Sources */,
