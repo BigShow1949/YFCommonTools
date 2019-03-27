@@ -16,6 +16,8 @@
 #pragma mark - 系统版本
 //获取当前系统版本
 #define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+#define DeviceVersion(VER) ([[[UIDevice currentDevice] systemVersion] compare:@#VER options:NSNumericSearch] != NSOrderedAscending)
+
 
 #define IS_iOS8Later (IOS_VERSION >= 8.0)
 #define IS_iOS9Later (IOS_VERSION >= 9.0)
@@ -45,9 +47,21 @@
 #define Height_StatusBar (IS_iPhoneX ? 44.0f: 20.0f)
 #define Height_NavBar (IS_iPhoneX ? 88.0f: 64.0f)
 
+#define Height_TopSafeAreaH (IS_iPhoneX ? 30 : 0)
+#define Height_BottomSafeAreaH (IS_iPhoneX ? 34 : 0)
+
 #define UISCREEN_WIDTH   [UIScreen mainScreen].bounds.size.width
 #define UISCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
 
+
+#pragma mark - 字体
+#define kFontRegular @"PingFang-SC-Regular"
+#define kFontMedium  @"PingFang-SC-Medium"
+#define kFontBold    @"PingFang-SC-Semibold"
+
+#define kFontRegularSize(font)  [UIFont fontWithName:@"PingFang-SC-Regular" size:font]
+#define kFontMediumSize(font)   [UIFont fontWithName:@"PingFang-SC-Medium" size:font]
+#define kFontBoldSize(font)     [UIFont fontWithName:@"PingFang-SC-Semibold" size:font]
 
 #pragma mark - 其他调试
 // 自定义Log
@@ -58,7 +72,7 @@
 #endif
 
 
-//是否为真机运行
+//是否为模拟器运行
 #if TARGET_IPHONE_SIMULATOR
 //模拟器运行
 #else

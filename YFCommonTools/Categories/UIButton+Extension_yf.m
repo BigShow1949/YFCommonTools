@@ -74,7 +74,12 @@
             labelEdgeInsets = UIEdgeInsetsMake(0, -imageWith-space/2.0, 0, imageWith+space/2.0);
         }
             break;
-            
+        case LLButtonStyleTextMiddle:
+        {
+            imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, -labelWidth);
+            labelEdgeInsets = UIEdgeInsetsMake(0, -imageWith, 0, 0);
+        }
+            break;
         default:
             break;
     }

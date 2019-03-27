@@ -8,6 +8,11 @@
 
 #import "YFNavigationBar_yf.h"
 
+//****************************宏*********************************
+#define YFSrcName(file) [@"YFNavigationBar.bundle" stringByAppendingPathComponent:file]
+#define YFFrameworkSrcName(file) [@"Frameworks/YFNavigationBar.framework/YFNavigationBar.bundle" stringByAppendingPathComponent:file]
+#define YFImage(file)      [UIImage imageNamed:YFSrcName(file)] ? :[UIImage imageNamed:YFFrameworkSrcName(file)]
+
 /** 状态栏高度 */
 #define kStatusBarHeight 20.0f
 
@@ -164,8 +169,8 @@
 {
     UIButton *backItem = [UIButton buttonWithType:UIButtonTypeCustom];
     [backItem setFrame:[[self class] leftItemFrame]];
-    [backItem setImage:[UIImage imageNamed:@"YFNavigationBar/back_item"] forState:UIControlStateNormal];
-    [backItem setImage:[UIImage imageNamed:@"YFNavigationBar/back_item"] forState:UIControlStateHighlighted];
+    [backItem setImage:YFImage(@"back_item") forState:UIControlStateNormal];
+    [backItem setImage:YFImage(@"back_item") forState:UIControlStateHighlighted];
     [backItem addTarget:self action:@selector(popViewController) forControlEvents:UIControlEventTouchUpInside];
     return backItem;
 }

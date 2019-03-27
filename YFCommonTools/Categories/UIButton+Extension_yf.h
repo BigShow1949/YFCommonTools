@@ -16,7 +16,8 @@ typedef NS_ENUM(NSInteger,LLButtonStyle) {
     LLButtonStyleTextLeft,     //文字在左，图片在右
     LLButtonStyleTextRight,    //文字在右，图片在左
     LLButtonStyleTextTop,      //文字在上，图片在下
-    LLButtonStyleTextBottom    //文字在下，图片在上
+    LLButtonStyleTextBottom,   //文字在下，图片在上
+    LLButtonStyleTextMiddle,   //文字/图片都在中间
 };
 
 
